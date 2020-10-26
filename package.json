@@ -1,0 +1,24 @@
+{
+  "name": "archgako_new",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SaltyRain/archgako_new.git"
+  },
+  "author": "Timur SaltyRain Garipov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SaltyRain/archgako_new/issues"
+  },
+  "homepage": "https://github.com/SaltyRain/archgako_new#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.13",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
+  }
+}
