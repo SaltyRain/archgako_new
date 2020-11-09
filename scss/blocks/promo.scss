@@ -1,0 +1,23 @@
+@import "../variables";
+
+.promo {
+    color: $gray-brown;
+    height: calc(100vh - 70px);
+    position: relative;
+}
+
+.promo-logo {
+    position: absolute;
+    top: 40%;
+    left: 48%;
+    transform: translate(-50%, -40%);
+}
+.promo-logo--archgako {
+    font-size: 48px;
+}
+
+.promo-logo--sign {
+    font-size: 20px;
+    text-align: right;
+
+}

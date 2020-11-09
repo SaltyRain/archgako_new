@@ -1,0 +1,14 @@
+@import "../variables";
+
+.button {
+    padding: 12px 40px;
+    background-color: $brown;
+    color: $white;
+    transition: 0.2s;
+    display: inline-block;
+}
+
+.button:hover, .button:focus {
+    background-color: $light-brown;
+    transition: 0.2s;
+}

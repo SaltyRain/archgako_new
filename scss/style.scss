@@ -1,4 +1,5 @@
-@import "colors";
+@import "variables";
+@import "fonts";
 
 *, *:before, *:after {
     box-sizing: border-box;
@@ -10,8 +11,11 @@ html {
 
 body {
     font-family: 'Arsenal', sans-serif;
-    background-color: $black;
-    color: $white;
+    color: $black;
+    font-size: 16px;
+
+    background-color: $white;
+    
     margin: auto;
 }
 
@@ -21,9 +25,17 @@ a {
     text-decoration: none;
 }
 
-img {
-    width: 100%;
+p {
+    font-size: 14px;
 }
+@media (min-width: 1000px) {
+    p {
+        font-size: 16px;
+    }
+}
+// img {
+//     width: 100%;
+// }
 
 .visually-hidden {
     position: absolute;
@@ -35,3 +47,23 @@ img {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
+
+
+@import "./containers.scss";
+
+// Header
+@import "./blocks/header.scss";
+@import "./blocks/site-logo.scss";
+@import "./blocks/site-nav.scss";
+@import "./blocks/site-tel.scss";
+@import "./blocks/side-menu.scss";
+@import "./blocks/hamburger.scss";
+
+// General
+@import "./blocks/button.scss";
+
+// Index
+
+@import "./blocks/promo.scss";
+@import "./blocks/about.scss";
