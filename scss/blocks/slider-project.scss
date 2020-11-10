@@ -1,0 +1,34 @@
+.slider-project--image-wrapper {
+    margin-top: -46px;
+    img {
+        object-fit: cover;
+        width: 100%;
+        // height: calc(100vw - 120px);
+        height: 220px;
+    }
+}
+
+@media (min-width: 400px) {
+    .slider-project--image-wrapper {
+        margin-top: -70px;
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 282px;
+        }
+    }
+    
+}
+
+.slider-project--link {
+    float: right;
+}
+.slider-project--link_text {
+    text-decoration: underline;
+    font-size: 18px;
+    margin-right: 12px;
+}
+
+.slider-project--link-arrow {
+    font-size: 1.8em;
+}

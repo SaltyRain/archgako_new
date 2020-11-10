@@ -1,0 +1,19 @@
+.event--image-wrapper {
+  position: relative;
+  max-width: 285px;
+  margin: auto;
+  z-index: 999; }
+  .event--image-wrapper img {
+    width: 100%; }
+
+.event--image-shadow {
+  position: absolute; }
+
+.event--title {
+  margin-top: 50px;
+  text-transform: uppercase;
+  margin-bottom: 0; }
+
+.event--year {
+  display: block;
+  margin-top: 12px; }

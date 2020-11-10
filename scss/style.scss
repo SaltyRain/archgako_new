@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    font-family: 'Arsenal', sans-serif;
+    font-family: 'Arsenal-Regular', 'Roboto', sans-serif;
     color: $black;
     font-size: 16px;
 
@@ -26,7 +26,7 @@ a {
 }
 
 p {
-    font-size: 14px;
+    font-size: 16px;
 }
 @media (min-width: 1000px) {
     p {
@@ -62,8 +62,19 @@ p {
 
 // General
 @import "./blocks/button.scss";
+@import "./blocks/section.scss";
+@import "./blocks/arrow.scss";
+@import "./blocks/drawings.scss";
+@import "./blocks/request-form.scss";
 
 // Index
-
 @import "./blocks/promo.scss";
 @import "./blocks/about.scss";
+@import "./blocks/slider.scss";
+@import "./blocks/event.scss";
+@import "./blocks/slider-project.scss";
+@import "./blocks/advantage.scss";
+
+
+// Footer
+@import "./blocks/footer.scss";

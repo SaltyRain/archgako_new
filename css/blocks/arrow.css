@@ -1,0 +1,22 @@
+.arrow {
+  outline: none;
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-top: 5px solid #C7C2BC;
+  border-right: 5px solid #C7C2BC;
+  transition: 0.2s; }
+  .arrow:hover {
+    border-top: 5px solid #C3B5AA;
+    border-right: 5px solid #C3B5AA;
+    transition: 0.2s; }
+
+.arrow_left {
+  transform: rotate(-135deg); }
+
+.arrow_right {
+  transform: rotate(45deg); }

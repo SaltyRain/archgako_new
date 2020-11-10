@@ -1,0 +1,24 @@
+.advantage {
+    display: flex;
+    justify-content: space-between;
+}
+
+.advantage--text {
+    margin-left: 16px;
+}
+.advantage--heading {
+    font-family: 'Arsenal-Bold';
+    margin-bottom: 0;
+}
+.advantage--desc {
+    margin-top: 8px;
+}
+
+// advantages
+
+.advantages--item {
+    margin-top: 28px;
+    &:first-child {
+        margin-top: 36px;
+    }
+}
