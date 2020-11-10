@@ -1,0 +1,10 @@
+.button {
+  padding: 12px 40px;
+  background-color: #AF9888;
+  color: #F2F2F2;
+  transition: 0.2s;
+  display: inline-block; }
+
+.button:hover, .button:focus {
+  background-color: #C3B5AA;
+  transition: 0.2s; }

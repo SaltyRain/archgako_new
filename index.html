@@ -5,60 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link href="https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/style.css">
     <title>Archgako | Главная</title>
 </head>
 <body>
-    <header>
+    <header class="header container">
         <h1 class="visually-hidden">АРХИТЕКТУРНОЕ БЮРО Archgako</h1>
-        <a href="#" class="site-logo">
-            <span class="archgako">ARCHGAKÒ</span>
-            <span class="archgako-sign">architecture and interior design</span>
+        <a href="#" class="header--site-logo site-logo">
+            <span class="header--archgako site-logo--archgako">ARCHGAKÒ</span>
+            <span class="header--sign site-logo--sign">architecture and interior design</span>
         </a>
 
-        <nav class="site-nav">
-            <ul>
-                <li><a href="#" class="site-nav--item">О студии</a></li>
-                <li><a href="#" class="site-nav--item">Проекты</a></li>
-                <li><a href="#" class="site-nav--item">Услуги</a></li>
-                <li><a href="#" class="site-nav--item">Блог</a></li>
-                <li><a href="#" class="site-nav--item">Контакты</a></li>
-            </ul>
-        </nav>
-
-        <a href="tel:+79111620482" class="site-tel">+7 (911) 162 04 82</a>
-
-        <button class="button request">Напишите нам</button>
-
-        <div class="language">
-            <span>ru | en</span>
-            <!-- ???? -->
+        <div class="header--button-wrapper">
+            <a href="tel:+79111620482" class="header--call-button">
+                <img class="call-button--icon"src="./img/icon-phone.png" alt="Позвонить в студию" width="30px" height="30px">
+            </a>
+    
+            <button class="header--hamburger hamburger" type="button">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>
         </div>
+
+
+        <div class="side-menu">
+            <nav class="header--site-nav site-nav">
+                <ul>
+                    <li><a href="#" class="site-nav--item">О студии</a></li>
+                    <li><a href="#" class="site-nav--item">Проекты</a></li>
+                    <li><a href="#" class="site-nav--item">Услуги</a></li>
+                    <li><a href="#" class="site-nav--item">Блог</a></li>
+                    <li><a href="#" class="site-nav--item">Контакты</a></li>
+                </ul>
+            </nav>
+    
+            <a href="tel:+79111620482" class="header--site-tel site-tel">
+                <span class="site-tel--number">+7 (911) 162 04 82</span>
+            </a>
+    
+            <button class="button request">Напишите нам</button>
+    
+            <div class="language">
+                <span>ru | en</span>
+            </div>
+        </div>
+        
     </header>
     <main>
-        <!-- BANER -->
-        <section class="section">
-            <h2 class="section--heading">О студии</h2>
-            <img src="" alt="">
-            <div class="est">
-                <span>est. 2017</span>
+        <section class="promo container">
+            <div class="promo-logo site-logo">
+                <span class="promo-logo--archgako site-logo--archgako">ARCHGAKÒ</span>
+                <span class="promo-logo--sign site-logo--sign">architecture and interior design</span>
+            
+            <!-- Добавить стрелку, которая прокрутит страницу ниже -->
+            </div>
+        </section>
+        <section class="about container">
+            <div class="about--photo-wrapper">
+                <h2 class="about--title">О студии</h2>
+                <img class="about--photo" src="./img/about.jpg" alt="Фото основателей студии">
             </div>
             
-            <div class="about">
-                <p>Студия ARCHGAKÒ с 2017 года создает интерьерные, архитектурные и градостроительные проекты различного уровня сложности. Для нас важен баланс качества и скорости выполнения проектов.</p>
-                <p>Мы стараемся для Вас! Проверяем каждую деталь и следим за качеством материалов, чтобы вы испытывали истинное наслаждение, возвращаясь каждый день в уютный дом, сделанный по вашим требованиям!</p>
-                <p>Выбирая ARCHGAKÒ, вы получаете красивый, уютный и эргономичный интерьер, созданный профессионалами.</p>
+            <!-- <div class="about--est"> -->
+                
+            <!-- </div> -->
             
-                <a href="#" class="button">Подробнее</a>
-            </div>
+            <div class="about--desc">
+                <div class="about--text-wrapper">
+                    <p>Студия ARCHGAKÒ с 2017 года создает интерьерные, архитектурные и градостроительные проекты различного уровня сложности. Для нас важен баланс качества и скорости выполнения проектов.</p>
+                    <p>Мы стараемся для Вас! Проверяем каждую деталь и следим за качеством материалов, чтобы вы испытывали истинное наслаждение, возвращаясь каждый день в уютный дом, сделанный по вашим требованиям!</p>
+                    <p>Выбирая ARCHGAKÒ, вы получаете красивый, уютный и эргономичный интерьер, созданный профессионалами.</p>
+                </div>
+                
+            
+                <span class="about--est">est. 2017</span>
 
-            <section class="subsection">
-                <h3 class="subsection--heading">Последние события</h3>
-                <!-- SLIDER -->
-            </section>
+                <a href="#" class="button about--button">Подробнее</a>
+            </div>
         </section>
         
-        <section class="section">
+        <section class="container">
+            <h3 class="section--heading">Последние события</h3>
+            <!-- SLIDER -->
+        </section>
+        
+        <section class="section container">
             <h2 class="section--heading">Проекты</h2>
             
         </section>

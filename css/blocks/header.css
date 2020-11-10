@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px; }
+
+.header--archgako {
+  font-size: 22px; }
+
+.header--sign {
+  font-size: 12px;
+  margin-left: 20px; }
+
+.header--button-wrapper {
+  display: flex;
+  justify-content: space-between; }
+
+.header--call-button {
+  margin-right: 22px;
+  margin-top: -1px; }

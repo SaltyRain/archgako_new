@@ -1,0 +1,54 @@
+@import "../variables";
+
+.about {
+}
+
+.about--photo-wrapper {
+    max-width: 344px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.about--title {
+    display: inline-block;
+    background-color: $gray-brown;
+    padding: 9px 28px;
+    min-width: 140px;
+    text-align: center;
+
+    font-weight: normal;
+    font-size: 20px;
+
+    position: absolute;
+    left: 45%;
+    
+    
+}
+
+.about--photo {
+    width: 100%;
+}
+
+.about--desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about--est {
+    font-family: $aesthetic-white;
+    font-size: 36px;
+    margin-top: 10px;
+}
+.about--est::after {
+    content: "";
+    background-color: black;
+    height: 2px;
+    width: 100px;
+}
+
+.about--button {
+    // margin: auto;
+    margin-top: 20px;
+    text-align: right;
+}
