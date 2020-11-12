@@ -90,7 +90,7 @@
             </div>
         </section>
         
-        <section class="container">
+        <section class="container section--index">
             <h3 class="section--heading">Последние события</h3>
             <div class="slider">
                 <!-- <button class="slider--arrow slider--arrow_left arrow arrow_left"></button> -->
@@ -109,7 +109,7 @@
         </section>
         
         <section>
-            <div class="container">
+            <div class="container section--index">
                 <div class="dot"></div>
                 <h2 class="section--heading">Проекты</h2>
             </div>
@@ -136,7 +136,7 @@
             </div>
         </section>
 
-        <section class="container">
+        <section class="container section--index">
             <div class="dot"></div>
             <h2 class="section--heading">Проект с ARCHGAKÒ  - это</h2>
             <div class="advantages">
@@ -202,27 +202,41 @@
             </div>
         </section>
 
-        <section class="container request-form">
+        <section class="container request-form section--index">
             <h3 class="section--heading section--heading_left request-form--title">Обратиться в студию</h3>
             <p class="brown-text request-form--desc">Ответим на вопросы, обсудим ваш проект</p>
 
             <form action="" class="form">
-                <input type="text" name="fio" placeholder="Ваше имя*"/>
-                <input type="tel" name="tel" placeholder="Телефон*"/>
-                <input type="submit" value="Отправить">
+                <input class="form--input" type="text" name="fio" placeholder="Ваше имя*"/>
+                <input class="form--input" type="tel" name="tel" placeholder="Телефон*"/>
+                <input class="form--button button button_disable" type="submit" value="Отправить">
             </form>
         </section>
     </main>
     <footer class="footer">
-        <div class="footer-logo">
-            <span class="footer-logo--archgako site-logo--archgako">ARCHGAKÒ</span>
-            <span class="footer-logo--sign site-logo--sign">architecture and interior design</span>
+        <div class="footer--column footer--logo">
+            <span class="footer--logo_archgako site-logo--archgako">ARCHGAKÒ</span>
+            <span class="footer--logo_sign site-logo--sign">architecture and interior design</span>
         </div>
         
-        <div class="footer-tel">
+        <div class="footer--column footer--tel">
             <a href="tel:+79111620482" class="footer-tel--item">+7 911 162 04 82 RUS</a>
             <a href="tel:+79216361451" class="footer-tel--item">+7 921 636 14 51 RUS</a>
             <a href="+393668202223" class="footer-tel--item">+39 366 82 02 223 EU</a>
+        </div>
+
+        <div class="footer--column">
+            <p class="footer--adress">Москва, улица Макаренко, 5с 1а, <span class="footer--br">ст. м.Чистые пруды</span></p>
+            <a href="mailto:archgako@gmail.com" class="footer--mail">archgako@gmail.com</a>
+        </div>
+
+        <div class="footer--column">
+            <div class="footer--social-media">
+                <a href="https://www.instagram.com/archgako/"><img class="footer__social-media-item" src="./img/instagram icon.svg" alt="ARCHGAKO в instagram" width="50px"></a>
+                <a href="https://www.facebook.com/ARCHGAKO/"><img class="footer__social-media-item" src="./img/facebook icon.svg" alt="ARCHGAKO на facebook" width="50px"></a>
+            </div>
+            <a href="#" class="footer--policy">Политика конфиденциальности</a>
+            <span class="footer--copyright">2020 © Archgako</span>
         </div>
     </footer>
     <script src='./js/index.js'></script>

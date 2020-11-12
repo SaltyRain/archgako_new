@@ -220,6 +220,9 @@ p {
   background-color: #C3B5AA;
   transition: 0.2s; }
 
+.button_disable {
+  color: #C4C4C4; }
+
 .section--heading {
   display: block;
   text-align: center;
@@ -227,6 +230,9 @@ p {
   font-weight: normal; }
   .section--heading_left {
     text-align: left; }
+
+.section--index {
+  margin-top: 82px; }
 
 .arrow {
   outline: none;
@@ -268,12 +274,6 @@ p {
 .brown-text {
   color: #AF9888; }
 
-.f-min-22 {
-  font-size: 22px; }
-
-.f-min-18 {
-  font-size: 18px; }
-
 .request-form--title {
   font-size: 22px;
   margin-bottom: 0; }
@@ -281,6 +281,23 @@ p {
 .request-form--desc {
   font-size: 18px;
   margin-top: 12px; }
+
+.form--input {
+  width: 100%;
+  height: 45px;
+  background-color: #D6D6D6;
+  border: 0;
+  border-radius: 0;
+  margin-top: 16px; }
+  .form--input:first-child {
+    margin-top: 10px; }
+  .form--input::placeholder {
+    color: #4E4A4A; }
+
+.form--button {
+  margin-top: 24px;
+  border: 0;
+  border-radius: 0; }
 
 .promo {
   color: #C7C2BC;
@@ -322,7 +339,8 @@ p {
 .about--desc {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  margin-top: 12px; }
 
 .about--est {
   font-family: "Aesthetic-White", Arial, Helvetica, sans-serif;
@@ -353,7 +371,7 @@ p {
     width: 100%; }
 
 .event--title {
-  margin-top: 50px;
+  margin-top: 22px;
   text-transform: uppercase;
   margin-bottom: 0; }
 
@@ -407,25 +425,26 @@ p {
     margin-top: 36px; }
 
 .footer {
-  height: 400px;
+  height: 500px;
   margin-top: 60px;
   background-color: #AF9888;
-  padding-top: 34px; }
+  padding-top: 34px;
+  color: #F2F2F2; }
 
-.footer-logo {
+.footer--logo {
   color: #F2F2F2;
   text-align: center; }
 
-.footer-logo--archgako {
+.footer--logo_archgako {
   font-size: 42px;
   margin-bottom: 0; }
 
-.footer-logo--sign {
+.footer--logo_sign {
   font-size: 24px;
   margin-left: 48px;
   margin-top: -4px; }
 
-.footer-tel {
+.footer--tel {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -433,7 +452,6 @@ p {
 
 .footer-tel--item {
   font-size: 20px;
-  color: #F2F2F2;
   margin-top: 8px;
   transition: 0.2s; }
   .footer-tel--item:first-child {
@@ -441,3 +459,38 @@ p {
   .footer-tel--item:hover, .footer-tel--item:focus {
     transition: 0.2s;
     text-decoration: underline; }
+
+.footer--adress {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 0; }
+
+.footer--br {
+  display: block; }
+
+.footer--mail {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 9px; }
+
+.footer--social-media {
+  margin-top: 32px;
+  text-align: center; }
+
+.footer__social-media-item:first-child {
+  margin-right: 16px; }
+
+.footer__social-media-item:nth-child(2) {
+  margin-left: 16px; }
+
+.footer--policy {
+  margin-top: 12px;
+  display: block;
+  text-decoration: underline;
+  text-align: center; }
+
+.footer--copyright {
+  display: block;
+  text-align: center;
+  margin-top: 6px; }

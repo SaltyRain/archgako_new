@@ -1,30 +1,32 @@
 @import "../variables";
 
 .footer {
-    height: 400px;
+    height: 500px;
     margin-top: 60px;
 
     background-color: $brown;
     padding-top: 34px;
+
+    color: $white;
 }
 
-.footer-logo {
+.footer--logo {
     color: $white;
     text-align: center;
 }
-.footer-logo--archgako {
+.footer--logo_archgako {
     font-size: 42px;
     margin-bottom: 0;
 
 }
 
-.footer-logo--sign {
+.footer--logo_sign {
     font-size: 24px;
     margin-left: 48px;
     margin-top: -4px;
 }
 
-.footer-tel {
+.footer--tel {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,7 +36,6 @@
 
 .footer-tel--item {
     font-size: 20px;
-    color: $white;
     margin-top: 8px;
     transition: 0.2s;
     &:first-child {
@@ -44,4 +45,44 @@
         transition: 0.2s;
         text-decoration: underline;
     }
+}
+
+.footer--adress {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+.footer--br {
+    display: block;
+}
+
+.footer--mail {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 9px;
+}
+
+.footer--social-media {
+    margin-top: 32px;
+    text-align: center;
+}
+.footer__social-media-item {
+    &:first-child {
+        margin-right: 16px;
+    }
+    &:nth-child(2) {
+        margin-left: 16px;
+    }
+}
+.footer--policy {
+    margin-top: 12px;
+    display: block;
+    text-decoration: underline;
+    text-align: center;
+}
+.footer--copyright {
+    display: block;
+    text-align: center;
+    margin-top: 6px;
 }
