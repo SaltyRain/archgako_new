@@ -9,3 +9,6 @@
 .button:hover, .button:focus {
   background-color: #C3B5AA;
   transition: 0.2s; }
+
+.button_disable {
+  color: #C4C4C4; }

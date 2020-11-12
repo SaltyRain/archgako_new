@@ -20,7 +20,8 @@
 .about--desc {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  margin-top: 12px; }
 
 .about--est {
   font-family: "Aesthetic-White", Arial, Helvetica, sans-serif;
