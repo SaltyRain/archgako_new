@@ -2,11 +2,10 @@
 
 
 .about--photo-wrapper {
-    max-width: 344px;
+    max-width: 260px;
     position: relative;
     margin: 0 auto;
 }
-
 .about--title {
     display: inline-block;
     background-color: $gray-brown;
@@ -18,9 +17,33 @@
     font-size: 20px;
 
     position: absolute;
-    left: 45%;
-    
-    
+    top: 2px;
+    left: 55%;
+}
+
+@media (min-width: 370px) {
+    .about--photo-wrapper {
+        max-width: 300px;
+    }
+    .about--title {
+        top: 4px;
+        left: 63%;
+    }
+}
+
+@media (min-width: 480px) {
+    .about--photo-wrapper {
+        max-width: 344px;
+    }
+    .about--title {
+        left: 200px;
+        font-size: 24px;
+        min-width: 175px;
+    }
+    .about--text-wrapper {
+        margin-top: 10px;
+        // max-width: 344px;
+    }
 }
 
 .about--photo {
@@ -49,5 +72,11 @@
 .about--button {
     // margin: auto;
     margin-top: 20px;
-    text-align: right;
+    text-align: center;
+}
+@media (min-width: 480px) {
+    .about--button {
+        min-width: 200px;
+        font-size: 20px;
+    }
 }

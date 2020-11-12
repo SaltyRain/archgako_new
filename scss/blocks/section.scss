@@ -11,3 +11,9 @@
 .section--index {
     margin-top: 82px;
 }
+
+@media (min-width: 400px) {
+    .section--heading_projects {
+        margin-bottom: 100px;
+    }
+}

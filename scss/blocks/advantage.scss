@@ -1,11 +1,29 @@
+// Разметка всего блока на сайте
+@media (min-width: 768px) {
+    .advantages {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5vw;
+    }
+}
+
+// Каждое отдельное преимущество
 .advantage {
     display: flex;
-    justify-content: space-between;
+    justify-content: stretch;
 }
 
 .advantage--text {
     margin-left: 16px;
 }
+
+@media (min-width: 480px) {
+    .advantage--text {
+        margin-left: 32px;
+    }
+}
+
 .advantage--heading {
     font-family: 'Arsenal-Bold';
     margin-bottom: 0;
