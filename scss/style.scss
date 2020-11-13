@@ -30,9 +30,10 @@ p {
 }
 @media (min-width: 1000px) {
     p {
-        font-size: 16px;
+        font-size: 18px;
     }
 }
+
 // img {
 //     width: 100%;
 // }
@@ -48,7 +49,9 @@ p {
     overflow: hidden;
 }
 
-
+.sign {
+    font-family: $aesthetic-white;
+}
 
 @import "./containers.scss";
 
@@ -67,6 +70,7 @@ p {
 @import "./blocks/drawings.scss";
 @import "./blocks/request-form.scss";
 @import "./blocks/form.scss";
+@import "./blocks/page.scss";
 
 // Index
 @import "./blocks/promo.scss";
@@ -76,6 +80,12 @@ p {
 @import "./blocks/slider-project.scss";
 @import "./blocks/advantage.scss";
 
+// About
+@import "./blocks/country.scss";
+@import "./blocks/team+member.scss";
+
+// Projects
+@import "./blocks/project.scss";
 
 // Footer
 @import "./blocks/footer.scss";

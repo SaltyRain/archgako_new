@@ -17,3 +17,11 @@
 .brown-text {
     color: $brown;
 }
+
+.gray-text {
+    color: $dark-gray;
+    margin-left: 3px;
+    &:first-child {
+        margin-left: 0;
+    }
+}

@@ -22,3 +22,19 @@
     border: 0;
     border-radius: 0;
 }
+
+.form--policy-acceptance {
+    margin-top: 16px;
+    line-height: 1.6em;
+    input {
+        border: 2px solid $gray;
+        border-radius: 0;
+    }
+    a {
+        border-bottom: 1.5px solid $form-brown;
+    }
+    label {
+        margin-left: 6px;
+    }
+
+}

@@ -44,13 +44,8 @@
 .about--est {
   font-family: "Aesthetic-White", Arial, Helvetica, sans-serif;
   font-size: 36px;
-  margin-top: 10px; }
-
-.about--est::after {
-  content: "";
-  background-color: black;
-  height: 2px;
-  width: 100px; }
+  margin-top: 10px;
+  border-bottom: 3px solid #D6D6D6; }
 
 .about--button {
   margin-top: 20px;

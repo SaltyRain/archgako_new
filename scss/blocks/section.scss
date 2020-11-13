@@ -7,6 +7,11 @@
         text-align: left;
     }
 }
+@media (min-width: 1000px) {
+    .section--heading {
+        font-size: 24px;
+    }
+}
 
 .section--index {
     margin-top: 82px;

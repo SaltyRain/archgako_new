@@ -13,7 +13,7 @@
 <body>
     <header class="header container">
         <h1 class="visually-hidden">АРХИТЕКТУРНОЕ БЮРО Archgako</h1>
-        <a href="#" class="header--site-logo site-logo">
+        <a href="index.html" class="header--site-logo site-logo">
             <span class="header--archgako site-logo--archgako">ARCHGAKÒ</span>
             <span class="header--sign site-logo--sign">architecture and interior design</span>
         </a>
@@ -37,11 +37,11 @@
             </button>
             <nav class="header--site-nav site-nav">
                 <ul>
-                    <li><a href="#" class="site-nav--item">О студии</a></li>
-                    <li><a href="#" class="site-nav--item">Проекты</a></li>
-                    <li><a href="#" class="site-nav--item">Услуги</a></li>
-                    <li><a href="#" class="site-nav--item">Блог</a></li>
-                    <li><a href="#" class="site-nav--item">Контакты</a></li>
+                    <li><a href="about.html" class="site-nav--item">О студии</a></li>
+                    <li><a href="projects.html" class="site-nav--item">Проекты</a></li>
+                    <li><a href="services.html" class="site-nav--item">Услуги</a></li>
+                    <li><a href="blog.html" class="site-nav--item">Блог</a></li>
+                    <li><a href="contacts.html" class="site-nav--item">Контакты</a></li>
                 </ul>
             </nav>
     
@@ -209,9 +209,19 @@
             <p class="brown-text request-form--desc">Ответим на вопросы, обсудим ваш проект</p>
 
             <form action="" class="form">
-                <input class="form--input" type="text" name="fio" placeholder="Ваше имя*"/>
-                <input class="form--input" type="tel" name="tel" placeholder="Телефон*"/>
-                <input class="form--button button button_disable" type="submit" value="Отправить">
+                <div class="form--row">
+                    <input class="form--input" type="text" name="fio" placeholder="Ваше имя*"/>
+                </div>
+                <div class="form--row">
+                    <input class="form--input" type="tel" name="tel" placeholder="Телефон*"/>
+                </div>
+                <div class="form--row">
+                    <input class="form--button button button_disable" type="submit" value="Отправить">
+                </div>
+                <div class="form--row form--policy-acceptance">
+                    <input id="request-form-accept-checkbox" type="checkbox">
+                    <label for="request-form-accept-checkbox">Даю согласие на обработку персональных данных в соответствии с <a href="#" >правилами пользования сайтом.</a></label>
+                </div>
             </form>
         </section>
     </main>

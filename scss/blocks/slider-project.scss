@@ -3,7 +3,6 @@
     img {
         object-fit: cover;
         width: 100%;
-        // height: calc(100vw - 120px);
         height: 220px;
     }
 }
@@ -38,9 +37,10 @@
     float: right;
 }
 .slider-project--link_text {
-    text-decoration: underline;
     font-size: 18px;
     margin-right: 12px;
+    padding-bottom: 4px;
+    border-bottom: 1.5px solid #000;
 }
 
 .slider-project--link-arrow {

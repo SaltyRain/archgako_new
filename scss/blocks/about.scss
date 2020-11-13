@@ -61,16 +61,10 @@
     font-family: $aesthetic-white;
     font-size: 36px;
     margin-top: 10px;
-}
-.about--est::after {
-    content: "";
-    background-color: black;
-    height: 2px;
-    width: 100px;
+    border-bottom: 3px solid $light-gray;
 }
 
 .about--button {
-    // margin: auto;
     margin-top: 20px;
     text-align: center;
 }

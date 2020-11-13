@@ -1,3 +1,8 @@
 .side-menu {
     display: none;
+    margin-top: 400px;
+    // position: absolute;
+    background-color: $gray;
+    // height: 100vh;
+    z-index: 1;
 }

@@ -1,0 +1,174 @@
+.team {
+    h2 {
+        margin-top: 80px;
+        margin-bottom: 32px;
+    }
+}
+@media (min-width: 480px) {
+    .team {
+        h2 {
+            margin-bottom: 48px;
+        }
+    }
+}
+
+.member--row {
+    display: flex;
+    flex-direction: column;
+}
+
+.member--photo {
+    align-self: center;
+    max-width: 300px;
+    img {
+        width: 100%;
+    }
+}
+
+.member--info {
+    order: 1;
+}
+.member--name {
+    font-family: "Arsenal-Bold";
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.member--profession {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    text-transform: uppercase;
+    color: $dark-gray;
+    li {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.member--education {
+    list-style: square;
+    line-height: 2em;
+    margin-top: 28px;
+}
+
+
+.member--contacts {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0;
+    padding-left: 18px;
+    li {
+        display: flex;
+        margin-top: 24px;
+    }
+}
+.member-contacts--icon {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-size: cover;
+    &_instagram {
+        background-image: url('../../img/icons8-instagram.png');
+    }
+    &_phone {
+        background-image: url('../../img/icons8-phone.png');
+    }
+}
+
+.member-contacts--text {
+    display: block;
+    margin-left: 12px;
+    margin-top: 6px;
+}
+
+
+
+.member--desc {
+    margin-top: 48px;
+    margin-bottom: 80px;
+}
+
+.team--sign {
+    display: block;
+    text-align: center;
+    font-size: 48px;
+}
+@media (min-width: 680px) {
+    .member--row {
+        flex-direction: row;
+    }
+    .member--contacts {
+        flex-direction: column;
+        padding-left: 18px;
+    }
+    .member--photo {
+        align-self: flex-start;
+    }
+    .member--name {
+        margin-top: 0;
+    }
+
+    // Картинка справа
+    .member--row_image-right {
+        justify-content: space-between;
+    }
+    .member--row_image-right > .member--info {
+        margin-right: 20px;
+        margin-left: 0;
+    }
+    .member--photo_right {
+        order: 2;
+    }
+    .member--name {
+        margin-left: 0;
+    }
+}
+
+
+@media (min-width: 900px) {
+    .member--info {
+        margin-left: 32px;
+    }
+    .member--title-wrapper {
+        display: flex;
+        align-content: flex-start;
+    }
+    .member--name {
+        margin-left: 18px;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-right: 32px;
+    }
+    .member--profession {
+        li {
+            margin-left: 18px;
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+    .member--contacts {
+        justify-content: flex-start;
+        li {
+            margin-right: 24px;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .member--contacts {
+        flex-direction: column;
+        li {
+            margin-right: 0;
+        }
+    }
+}
