@@ -27,6 +27,9 @@
 
 .member--info {
     order: 1;
+    &:first-child {
+        margin-left: 16px;
+    }
 }
 .member--name {
     font-family: "Arsenal-Bold";
@@ -115,6 +118,8 @@
     }
     .member--name {
         margin-top: 0;
+        text-align: left;
+        padding-left: 28px;
     }
 
     // Картинка справа
@@ -124,6 +129,9 @@
     .member--row_image-right > .member--info {
         margin-right: 20px;
         margin-left: 0;
+    }
+    .member--row_image-right > .member--info > .member--title-wrapper > .member--name {
+        padding-left: 32px;
     }
     .member--photo_right {
         order: 2;

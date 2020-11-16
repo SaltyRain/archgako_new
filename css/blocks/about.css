@@ -42,6 +42,7 @@
   margin-top: 12px; }
 
 .about--est {
+  display: inline-block;
   font-family: "Aesthetic-White", Arial, Helvetica, sans-serif;
   font-size: 36px;
   margin-top: 10px;
@@ -55,3 +56,49 @@
   .about--button {
     min-width: 200px;
     font-size: 20px; } }
+
+@media (min-width: 768px) {
+  .about {
+    display: flex; }
+  .about--photo-wrapper {
+    min-width: 360px;
+    margin-right: 32px; }
+  .about--title {
+    top: 12px;
+    left: 63%;
+    margin: 0; }
+  .about--text-wrapper {
+    margin-top: 32px; }
+  .about {
+    position: relative; }
+  .about--desc {
+    display: block;
+    margin-top: 48px; }
+  .about--est {
+    position: absolute;
+    top: 0;
+    right: 10px; }
+  .about--button {
+    margin-top: 10px; } }
+
+@media (min-width: 1024px) {
+  .about--photo-wrapper {
+    margin-right: 54px; }
+  .about--text-wrapper {
+    margin-top: 40px; } }
+
+@media (min-width: 1180px) {
+  .about--photo-wrapper {
+    min-width: 430px;
+    margin-right: 46px; }
+  .about--text-wrapper {
+    margin-top: 80px; }
+  .about--button {
+    margin-top: 18px; }
+  .about--title {
+    top: 30px;
+    left: 80%;
+    padding-top: 12px;
+    padding-bottom: 12px; }
+  .about--est {
+    top: 18px; } }

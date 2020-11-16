@@ -21,3 +21,36 @@
     text-align: right;
 
 }
+
+@media (min-width: 400px) {
+    .promo-logo {
+        top: 35%;
+        left: 49%;
+        transform: translate(-50%, -40%);
+    }
+    .promo-logo--archgako {
+        font-size: 64px;
+    }
+    
+    .promo-logo--sign {
+        font-size: 28px;
+        text-align: right;
+    
+    }
+}
+
+@media (min-width: 768px) and (min-height: 600px) {
+    .promo-logo {
+        top: 40%;
+        left: 49%;
+        transform: translate(-50%, -40%);
+    }
+    .promo-logo--archgako {
+        font-size: 96px;
+    }
+    .promo-logo--sign {
+        font-size: 38px;
+        text-align: right;
+    
+    }
+}
