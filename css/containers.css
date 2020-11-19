@@ -12,12 +12,16 @@
 @media (min-width: 768px) {
   .container {
     padding-left: 20px;
-    padding-right: 20px; } }
+    padding-right: 20px; }
+    .container_small {
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto; } }
 
 @media (min-width: 1000px) {
   .container {
-    padding-left: 30px;
-    padding-right: 30px; } }
+    padding-left: 40px;
+    padding-right: 40px; } }
 
 @media (min-width: 1180px) {
   .container {

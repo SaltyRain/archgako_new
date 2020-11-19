@@ -1,8 +1,115 @@
-.side-menu {
-    display: none;
-    margin-top: 400px;
-    // position: absolute;
-    background-color: $gray;
-    // height: 100vh;
-    z-index: 1;
+
+@media (max-width: 1000px) {
+    .side-menu {
+        display: none;
+        top: 0;
+        right: 0;
+        position: absolute;
+        background-color: $light-brown;
+        // height: calc(100vh - 60px);
+        height: 100vh;
+        // height: 100vh;
+        width: 100%;
+        z-index: 1;
+        font-size: 20px;
+
+        flex-direction: column !important;
+        justify-content: space-between !important;
+        overflow: hidden;
+        // align-items: center;
+    }
+    .close {
+        outline: 0;
+        border: 0;
+        background-color: transparent;
+        font-size: 30px;
+        // background-color: red;
+        width: 10px;
+        // height: 30px;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+
+    .site-nav {
+        margin-top: 20vh;
+    }
+    .site-nav--item {
+        margin-bottom: 12px;
+    }
+
+    .request {
+        display: block !important;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #fff !important;
+        color: $black !important;
+        width: 90vw;
+        // margin-top: 60px;
+        position: absolute !important;
+        bottom: 10px;
+    }
+
+    .language {
+        position: absolute;
+        top: 60px;
+        left: 12%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .side-menu {
+        display: flex;
+        flex-direction: row;
+        // justify-content: center;
+        align-items: center;
+        margin-top: 0;
+        background-color: transparent;
+    }
+    .side-menu--close {
+        display: none;
+    }
+    .site-nav {
+        ul {
+            display: flex;
+            margin-right: 100px;
+            li {
+                margin-right: 20px;
+                border-bottom: 2px solid transparent;
+                margin-top: 6px;
+                padding-bottom: 6px;
+                transition: 0.2s;
+                &:hover {
+                    border-bottom: 2px solid $black;
+                }
+            }
+        }
+    }
+    .hamburger {
+        display: none !important;
+    }
+    .header {
+        position: relative;
+    }
+    .header--call-button {
+        position: absolute;
+        z-index: 2;
+        float: right;
+        top: 24px;
+        right: 320px;
+    }
+    .request {
+        margin-right: 34px;
+    }
+}
+
+@media (min-width: 1180px) {
+    .site-nav {
+        ul {
+            margin-right: 130px;
+        }
+    }
+    .header--call-button {
+        right: 360px;
+    }
 }

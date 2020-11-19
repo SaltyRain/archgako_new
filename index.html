@@ -33,15 +33,15 @@
 
         <div class="side-menu">
             <button class="side-menu--close close" type="button">
-                <span class="close--inner">&#10060;</span>
+                <span class="close--inner" style="color: transparent;  text-shadow: 0 0 0 rgb(39, 41, 39); ">&#x274C;</span>
             </button>
             <nav class="header--site-nav site-nav">
                 <ul>
-                    <li><a href="about.html" class="site-nav--item">О студии</a></li>
-                    <li><a href="projects.html" class="site-nav--item">Проекты</a></li>
-                    <li><a href="services.html" class="site-nav--item">Услуги</a></li>
-                    <li><a href="blog.html" class="site-nav--item">Блог</a></li>
-                    <li><a href="contacts.html" class="site-nav--item">Контакты</a></li>
+                    <li class="site-nav--item"><a href="about.html" >О студии</a></li>
+                    <li class="site-nav--item"><a href="projects.html" >Проекты</a></li>
+                    <li class="site-nav--item"><a href="services.html" >Услуги</a></li>
+                    <li class="site-nav--item"><a href="blog.html" >Блог</a></li>
+                    <li ><a href="contacts.html" >Контакты</a></li>
                 </ul>
             </nav>
     
@@ -94,18 +94,53 @@
         <section class="container section--index">
             <h3 class="section--heading">Последние события</h3>
             <div class="slider">
-                <button class="slider--arrow slider--arrow_left arrow arrow_left"></button>
-                <div class="slider--items-wrapper">
-                    <div class="event slider--item">
-                        <div class="event--image-wrapper">
-                            <img src="./img/news3.jpg" alt="Courtyard party paris design week">
-                            <!-- <div class="event--image-shadow">box</div> -->
+                <!-- <button class="slider--arrow slider--arrow_left arrow arrow_left"></button> -->
+                <div class="slider--wrapper">
+                    <div class="slider--items-wrapper">
+                        <div class="event slider--item">
+                            <div class="event--image-wrapper">
+                                <img src="./img/news1.jpg" alt="Courtyard party paris design week">
+                                <!-- <div class="event--image-shadow">box</div> -->
+                            </div>
+                            <p class="event--title">CELEBRATING CRAFTSMANSHIP AND DESIGN MILAN DESIGN WEEK</p>
+                            <span class="event--year">2019</span>
                         </div>
-                        <p class="event--title">Courtyard party paris design week</p>
-                        <span class="event--year">2019</span>
+                        <div class="event slider--item">
+                            <div class="event--image-wrapper">
+                                <img src="./img/news2.jpg" alt="Courtyard party paris design week">
+                                <!-- <div class="event--image-shadow">box</div> -->
+                            </div>
+                            <p class="event--title">Courtyard party paris design week</p>
+                            <span class="event--year">2019</span>
+                        </div>
+                        <div class="event slider--item">
+                            <div class="event--image-wrapper">
+                                <img src="./img/news3.jpg" alt="Courtyard party paris design week">
+                                <!-- <div class="event--image-shadow">box</div> -->
+                            </div>
+                            <p class="event--title">Courtyard party paris design week</p>
+                            <span class="event--year">2018</span>
+                        </div>
+                        <div class="event slider--item">
+                            <div class="event--image-wrapper">
+                                <img src="./img/news3.jpg" alt="Courtyard party paris design week">
+                                <!-- <div class="event--image-shadow">box</div> -->
+                            </div>
+                            <p class="event--title">Courtyard party paris design week</p>
+                            <span class="event--year">2019</span>
+                        </div>
+                        <div class="event slider--item">
+                            <div class="event--image-wrapper">
+                                <img src="./img/news3.jpg" alt="Courtyard party paris design week">
+                                <!-- <div class="event--image-shadow">box</div> -->
+                            </div>
+                            <p class="event--title">Courtyard party paris design week</p>
+                            <span class="event--year">2019</span>
+                        </div>
                     </div>
                 </div>
-                <button class="slider--arrow slider--arrow_right arrow arrow_right"></button>
+                
+                <!-- <button class="slider--arrow slider--arrow_right arrow arrow_right"></button> -->
             </div>
         </section>
         
@@ -115,17 +150,13 @@
                 <h2 class="section--heading section--heading_projects">Проекты</h2>
             </div>
             <div class="bg">
-                <div class="container">
-                    <div class="slider">
+                <div class="container slider-project">
+                    <div class="slider ">
                         <!-- <button class="slider--arrow slider--arrow_left arrow arrow_left"></button> -->
                         <div class="slider--items-wrapper">
-                            <div class="slider-project">
                                 <div class="slider-project--image-wrapper">
                                     <img src="./img/project.jpg" alt="проект">
                                 </div>
-
-
-                            </div>
                         </div>
                         <!-- <button class="slider--arrow slider--arrow_right arrow arrow_right"></button> -->
                     </div>
@@ -222,7 +253,7 @@
                         <div class="form--row form--policy-acceptance">
                             <div class="checkbox">
                                 <input class="custom-checkbox" type="checkbox" id="request-form-accept-checkbox" name="color-1" value="indigo">
-                                <label for="request-form-accept-checkbox">Даю согласие на обработку персональных данных в соответствии с<a href="#" >правилами пользования сайтом.</a></label>
+                                <label for="request-form-accept-checkbox">Даю согласие на обработку персональных данных в соответствии с<a href="policy.html" >правилами пользования сайтом.</a></label>
                             </div>
                         </div>
                         <div class="form--row">
@@ -231,9 +262,6 @@
                     </form>
                 </div>
             </div>
-
-
-
         </section>
     </main>
     <footer class="footer--wrapper">
@@ -261,7 +289,7 @@
                         <a href="https://www.instagram.com/archgako/"><img class="footer__social-media-item" src="./img/instagram icon.svg" alt="ARCHGAKO в instagram" width="50px"></a>
                         <a href="https://www.facebook.com/ARCHGAKO/"><img class="footer__social-media-item" src="./img/facebook icon.svg" alt="ARCHGAKO на facebook" width="50px"></a>
                     </div>
-                    <a href="#" class="footer--policy">Политика конфиденциальности</a>
+                    <a href="policy.html" class="footer--policy">Политика конфиденциальности</a>
                     <span class="footer--copyright">2020 © Archgako</span>
                 </div>
             </div>

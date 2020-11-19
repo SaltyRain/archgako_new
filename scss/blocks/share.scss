@@ -1,0 +1,19 @@
+.share {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    span {
+        display: block;
+        margin-top: -8px;
+        margin-right: 18px;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+    }
+    li {
+        margin-right: 14px;
+    }
+}

@@ -6,7 +6,7 @@
     const sideMenuContainer = document.getElementsByClassName('side-menu')[0];
 
     openButton.addEventListener('click', () => {
-        sideMenuContainer.style.display = 'block';
+        sideMenuContainer.style.display = 'flex';
         headerButtonsContainer.style.display = 'none';
     })
 

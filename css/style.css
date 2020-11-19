@@ -47,6 +47,16 @@ p {
   p {
     font-size: 18px; } }
 
+.full-width {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  margin-top: 32px;
+  margin-bottom: 48px; }
+
+.full-article p {
+  line-height: 140%; }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -78,12 +88,16 @@ p {
 @media (min-width: 768px) {
   .container {
     padding-left: 20px;
-    padding-right: 20px; } }
+    padding-right: 20px; }
+    .container_small {
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto; } }
 
 @media (min-width: 1000px) {
   .container {
-    padding-left: 30px;
-    padding-right: 30px; } }
+    padding-left: 40px;
+    padding-right: 40px; } }
 
 @media (min-width: 1180px) {
   .container {
@@ -103,7 +117,9 @@ p {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 70px; }
+  height: 70px;
+  position: sticky;
+  z-index: 999; }
 
 .header--archgako {
   font-size: 22px; }
@@ -137,16 +153,92 @@ p {
 
 @media (min-width: 1000px) {
   .site-nav ul {
-    display: block; } }
+    display: block; }
+  .site-nav--item {
+    font-size: 18px; } }
 
 .site-tel--number {
   display: none; }
 
-.side-menu {
-  display: none;
-  margin-top: 400px;
-  background-color: #C4C4C4;
-  z-index: 1; }
+@media (max-width: 1000px) {
+  .side-menu {
+    display: none;
+    top: 0;
+    right: 0;
+    position: absolute;
+    background-color: #C3B5AA;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+    font-size: 20px;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    overflow: hidden; }
+  .close {
+    outline: 0;
+    border: 0;
+    background-color: transparent;
+    font-size: 30px;
+    width: 10px;
+    position: absolute;
+    top: 15px;
+    right: 20px; }
+  .site-nav {
+    margin-top: 20vh; }
+  .site-nav--item {
+    margin-bottom: 12px; }
+  .request {
+    display: block !important;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff !important;
+    color: #262626 !important;
+    width: 90vw;
+    position: absolute !important;
+    bottom: 10px; }
+  .language {
+    position: absolute;
+    top: 60px;
+    left: 12%; } }
+
+@media (min-width: 1000px) {
+  .side-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 0;
+    background-color: transparent; }
+  .side-menu--close {
+    display: none; }
+  .site-nav ul {
+    display: flex;
+    margin-right: 100px; }
+    .site-nav ul li {
+      margin-right: 20px;
+      border-bottom: 2px solid transparent;
+      margin-top: 6px;
+      padding-bottom: 6px;
+      transition: 0.2s; }
+      .site-nav ul li:hover {
+        border-bottom: 2px solid #262626; }
+  .hamburger {
+    display: none !important; }
+  .header {
+    position: relative; }
+  .header--call-button {
+    position: absolute;
+    z-index: 2;
+    float: right;
+    top: 24px;
+    right: 320px; }
+  .request {
+    margin-right: 34px; } }
+
+@media (min-width: 1180px) {
+  .site-nav ul {
+    margin-right: 130px; }
+  .header--call-button {
+    right: 360px; } }
 
 /*!
  * Hamburgers
@@ -667,15 +759,43 @@ input[type=checkbox]:focus {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between; }
+  justify-content: center; }
+
+.slider--item {
+  margin: 0 26px; }
+
+.slider--wrapper {
+  width: 263px;
+  overflow: hidden;
+  flex-shrink: 0; }
+  @media (min-width: 480px) {
+    .slider--wrapper {
+      margin: 0 50px; } }
+  @media (min-width: 768px) {
+    .slider--wrapper {
+      width: 569px;
+      margin: 0 40px; } }
+  @media (min-width: 1000px) {
+    .slider--wrapper {
+      width: 850px;
+      margin: 0 15px; } }
+  @media (min-width: 1180px) {
+    .slider--wrapper {
+      width: 1043px; } }
+
+.slider--items-wrapper {
+  display: flex; }
 
 .event--image-wrapper {
   position: relative;
-  max-width: 285px;
+  min-width: 241px;
   margin: auto;
   z-index: 999; }
   .event--image-wrapper img {
     width: 100%; }
+  @media (min-width: 1180px) {
+    .event--image-wrapper {
+      width: 311px; } }
 
 .event--title {
   margin-top: 22px;
@@ -704,11 +824,42 @@ input[type=checkbox]:focus {
     height: calc(282px + 5vh + 10vw); } }
 
 @media (min-width: 768px) {
+  .slider-project {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto; }
   .slider-project--image-wrapper img {
     margin-left: auto;
     margin-right: auto;
-    max-width: 688px;
-    height: calc(282px + 5vh + 10vw); } }
+    height: calc(282px + 5vh + 10vw); }
+  .slider-project--description {
+    margin-top: 32px;
+    width: 80%;
+    margin-left: 146px; } }
+
+@media (min-width: 1000px) {
+  .slider-project {
+    width: 900px; }
+  .slider-project--image-wrapper img {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: calc(320px + 5vh + 10vw); }
+  .slider-project--description {
+    width: 70%;
+    margin-left: 244px; } }
+
+@media (min-width: 1180px) {
+  .slider-project {
+    width: 1100px; }
+  .slider-project--image-wrapper img {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: calc(320px + 5vh + 10vw); }
+  .slider-project--description {
+    width: 60%;
+    margin-left: 390px; } }
 
 .slider-project--link {
   float: right; }
@@ -1078,6 +1229,51 @@ input[type=checkbox]:focus {
 @media (min-width: 1000px) {
   .maps {
     grid-column-gap: 40px; } }
+
+.share {
+  margin-top: 70px;
+  display: flex;
+  align-items: center; }
+  .share span {
+    display: block;
+    margin-top: -8px;
+    margin-right: 18px; }
+  .share ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex; }
+  .share li {
+    margin-right: 14px; }
+
+.discuss-project {
+  margin-top: 64px;
+  border-top: 2px solid #C7C2BC;
+  border-bottom: 2px solid #C7C2BC;
+  text-align: center;
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px; }
+
+.discuss-project-wrapper {
+  margin: auto; }
+
+.discuss-project--text {
+  font-size: 20px;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 24px; }
+
+@media (min-width: 1000px) {
+  .discuss-project--text {
+    font-size: 24px; } }
+
+.discuss-project--button {
+  background-color: #C7C2BC;
+  color: #262626; }
 
 .footer--wrapper {
   background-color: #AF9888; }

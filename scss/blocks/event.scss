@@ -5,12 +5,15 @@
     // width: calc(100vw - 20%);
     // width: 100px;
     position: relative;
-    max-width: 285px;
+    min-width: 241px;
     margin: auto;
     z-index: 999;
     img {
         width: 100%;
         // position: relative;
+    }
+    @media (min-width: 1180px) {
+        width: 311px;
     }
 }
 
