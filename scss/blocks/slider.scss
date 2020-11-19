@@ -16,3 +16,31 @@
     }
 }
 
+.slider--item {
+    margin: 0 26px;
+}
+
+.slider--wrapper {
+    width: 263px;
+    overflow: hidden;
+    flex-shrink: 0;
+    @media (min-width: 480px) {
+        margin: 0 50px;
+    }
+    @media (min-width: 768px) {
+        width: 569px;
+        margin: 0 40px;
+    }
+    @media (min-width: 1000px) {
+        width: 850px;
+        margin: 0 15px;
+    }
+    @media (min-width: 1180px) {
+        width: 1043px;
+        margin: 0 40px;
+    }
+}
+
+.slider--items-wrapper {
+    display: flex;
+}
