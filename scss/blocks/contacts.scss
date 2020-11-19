@@ -1,0 +1,50 @@
+.contacts--row {
+    display: flex;
+    flex-direction: column;
+}
+.contacts--icon {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    &_instagram {
+        background-image: url('../../img/icons8-instagram.png');
+    }
+    &_phone {
+        background-image: url('../../img/icons8-phone.png');
+    }
+    &_mailbox {
+        background-image: url('../../img/mailbox.png');
+    }
+    &_location {
+        background-image: url('../../img/location.png');
+    }
+    &_big-margin {
+        margin-right: 32px;
+    }
+}
+
+.contacts--item_margin-bot {
+    margin-bottom: 14px;
+}
+
+@media (min-width: 620px) {
+    .contacts--row {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .contacts--col > .section--index {
+        margin-top: 0;
+    }
+    .contacts--col {
+        &:first-child {
+            padding-right: 18px;
+        }
+    }
+    .contacts--icon {
+        &_big-margin {
+            margin-right: 12px;
+        }
+    }
+}

@@ -1,7 +1,4 @@
-.blog--intro {
-    font-size: 20px;
-    margin-bottom: 48px;
-}
+
 .blog--articles {
     // display: grid;
     grid-template-columns: 1fr;
@@ -19,12 +16,14 @@
         &:hover {
             &>.blog-article--preview-image {
                 >img {
+                    transition: 0.2s;
                     filter: saturate(1);
                 }
             }
             &>.blog-article--title {
-                border-bottom: 2px solid black;
-                // text-decoration: underline;
+                // border-bottom: 2px solid black;
+                transition: 0.2s;
+                text-decoration: underline;
             }
         }
     }

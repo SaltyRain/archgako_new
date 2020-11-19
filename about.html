@@ -114,13 +114,13 @@
                         </ul>
                         <ul class="member--contacts">
                             <li>
-                                <div class="member-contacts--icon member-contacts--icon_instagram"></div>
+                                <div class="contacts--icon contacts--icon_instagram"></div>
                                 <a href="https://www.instagram.com/__kondratovich__/" class="member-contacts--text">@__kondratovich__</a>
                             </li>
                             <li>
-                                <div class="member-contacts--icon member-contacts--icon_phone"></div>
+                                <div class="contacts--icon contacts--icon_phone"></div>
                                 <div class="member-contacts--items-wrapper">
-                                    <span href="tel:+79111620482" class="member-contacts--text">+7 911 162 04 82 <span class="brown-text">RUS</span></span>
+                                    <a href="tel:+79111620482" class="member-contacts--text">+7 911 162 04 82 <span class="brown-text">RUS</span></a>
                                 </div>
                                 
                             </li>
@@ -155,16 +155,16 @@
                             <li>Параметрический дизайн (AA DLAB, Лондон)</li>
                             <li> Архитектор-урбанист (Polimi, Милан)</li>
                         </ul>
-                        <ul class="member--contacts">
+                        <ul class="member--contacts contacts">
                             <li>
-                                <div class="member-contacts--icon member-contacts--icon_instagram"></div>
+                                <div class="contacts--icon contacts--icon_instagram"></div>
                                 <a href="https://www.instagram.com/mamourrr_" class="member-contacts--text">@mamourrr_</a>
                             </li>
                             <li>
-                                <div class="member-contacts--icon member-contacts--icon_phone"></div>
+                                <div class="contacts--icon contacts--icon_phone"></div>
                                 <div class="member-contacts--items-wrapper">
-                                    <span href="tel:+79216361451" class="member-contacts--text">+7 921 636 14 51 <span class="brown-text">RUS</span></span>
-                                    <span href="tel:+7393668202223" class="member-contacts--text">+7 39 366 82 02 223 <span class="brown-text">EU</span></span>
+                                    <a href="tel:+79216361451" class="member-contacts--text">+7 921 636 14 51 <span class="brown-text">RUS</span></a>
+                                    <a href="tel:+7393668202223" class="member-contacts--text">+7 39 366 82 02 223 <span class="brown-text">EU</span></a>
                                 </div>
                                 
                             </li>
@@ -183,26 +183,32 @@
             
             <span class="team--sign sign">Angelina & Ksenia</span>
         </section>
-        <section class="container request-form section--index">
-            <h3 class="section--heading section--heading_left request-form--title">Обратиться в студию</h3>
-            <p class="brown-text request-form--desc">Ответим на вопросы, обсудим ваш проект</p>
-
-            <form action="" class="form">
-                <div class="form--row">
-                    <input class="form--input" type="text" name="fio" placeholder="Ваше имя*"/>
+        <section class="request-form section--index">
+            <div class="contacts--row">
+                <div class="contacts--col">
+                    <h3 class="section--heading section--heading_left request-form--title">Обратиться в студию</h3>
+                    <p class="brown-text request-form--desc">Ответим на вопросы, обсудим ваш проект</p>
                 </div>
-                <div class="form--row">
-                    <input class="form--input" type="tel" name="tel" placeholder="Телефон*"/>
+                <div class="contacts--col">
+                    <form action="" class="form form_short">
+                        <div class="form--row">
+                            <input class="form--input" type="text" name="fio" placeholder="Ваше имя*"/>
+                        </div>
+                        <div class="form--row">
+                            <input class="form--input" type="tel" name="tel" placeholder="Телефон*"/>
+                        </div>
+                        <div class="form--row form--policy-acceptance">
+                            <div class="checkbox">
+                                <input class="custom-checkbox" type="checkbox" id="request-form-accept-checkbox" name="color-1" value="indigo">
+                                <label for="request-form-accept-checkbox">Даю согласие на обработку персональных данных в соответствии с<a href="#" >правилами пользования сайтом.</a></label>
+                            </div>
+                        </div>
+                        <div class="form--row">
+                            <input class="form--button button button_disable" type="submit" value="Отправить">
+                        </div>
+                    </form>
                 </div>
-                <div class="form--row">
-                    <input class="form--button button button_disable" type="submit" value="Отправить">
-                </div>
-                <div class="form--row form--policy-acceptance">
-                    <input id="request-form-accept-checkbox" type="checkbox">
-                    <label for="request-form-accept-checkbox">Даю согласие на обработку персональных данных в соответствии с <a href="#" >правилами пользования сайтом.</a></label>
-                </div>
-            </form>
-        </section>
+            </div>
     </main>
     <footer class="footer">
         <div class="footer--column footer--logo">

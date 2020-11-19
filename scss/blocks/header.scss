@@ -25,3 +25,9 @@
     margin-right: 22px;
     margin-top: -1px;
 }
+
+@media (min-width: 1000px) {
+    .header--hamburger {
+        display: none;
+    }
+}

@@ -23,6 +23,15 @@ body {
 a {
     color: inherit;
     text-decoration: none;
+    &:focus {
+        outline-color: $black;
+    }
+}
+
+button {
+    &:focus {
+        outline-color: $black;
+    }
 }
 
 p {
@@ -33,6 +42,7 @@ p {
         font-size: 18px;
     }
 }
+
 
 // img {
 //     width: 100%;
@@ -53,6 +63,11 @@ p {
     font-family: $aesthetic-white;
 }
 
+.intro-text{
+    font-size: 20px;
+    margin-bottom: 48px;
+}
+
 @import "./containers.scss";
 
 // Header
@@ -71,7 +86,7 @@ p {
 @import "./blocks/request-form.scss";
 @import "./blocks/form.scss";
 @import "./blocks/page.scss";
-
+@import "./blocks/contacts.scss";
 // Index
 @import "./blocks/promo.scss";
 @import "./blocks/about.scss";
@@ -89,5 +104,9 @@ p {
 
 // Blog
 @import "./blocks/blog-article.scss";
+
+// Contacts
+
+@import "./blocks/maps.scss";
 // Footer
 @import "./blocks/footer.scss";
