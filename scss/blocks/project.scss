@@ -42,7 +42,7 @@
     text-align: center;
     img {
         width: 100%;
-        max-width: 360px;
+        // max-width: 360px;
     }
 }
 .project--explication {
@@ -53,19 +53,52 @@
 }
 
 @media (min-width: 768px) {
-    .project--row {
-        grid-template-areas: "info" "scheme"
-                            "title" "scheme";
+    .project--baner {
+        margin-bottom: 32px;
+        img {
+            height: 260px;
+        }
     }
-    // .project--scheme-wrapper {
-    //     display: flex;
-    // }
-    // .project--scheme {
-    //     min-width: 360px;
-    // }
-    // .project--explication {
-    //     margin-top: 0;
-    //     margin-bottom: 0;
-    //     margin-left: 24px;
-    // }
+    .project--row {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 32px;
+    }
+    .project--scheme-wrapper {
+        margin-top: 0;
+        justify-self: flex-end;
+    }
+    .project--name {
+        margin-top: 4px;
+    }
+    .project--scheme {
+        max-width: none;
+    }
+    .project {
+        margin-bottom: 100px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .project--baner {
+        img {
+            height: 322px;
+        }
+    }
+    .project {
+        margin-bottom: 130px;
+    }
+}
+
+@media (min-width: 1180px) {
+    .project--column {
+        &:first-child {
+            display: block;
+        }
+    }
+    .project--info-mobile {
+        display: none;
+    }
+    .project--row {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }

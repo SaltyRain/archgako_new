@@ -1,0 +1,33 @@
+.discuss-project {
+    margin-top: 64px;
+    border-top: 2px solid $gray-brown;
+    border-bottom: 2px solid $gray-brown;
+    text-align: center;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.discuss-project-wrapper {
+    margin: auto;
+}
+.discuss-project--text {
+    font-size: 20px;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+@media (min-width: 1000px) {
+    .discuss-project--text {
+
+        font-size: 24px;
+    }
+}
+
+.discuss-project--button {
+    background-color: $gray-brown;
+    color: $black;
+}

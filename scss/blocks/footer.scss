@@ -1,10 +1,13 @@
 @import "../variables";
 
+.footer--wrapper {
+    background-color: $brown;
+}
 .footer {
     height: 500px;
     margin-top: 60px;
 
-    background-color: $brown;
+    
     padding-top: 34px;
 
     color: $white;
@@ -51,6 +54,10 @@
     text-align: center;
     font-size: 18px;
     margin-bottom: 0;
+    line-height: 1.6em;
+    &:hover {
+        text-decoration: underline;
+    }
 }
 .footer--br {
     display: block;
@@ -61,18 +68,29 @@
     text-align: center;
     font-size: 18px;
     margin-top: 9px;
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 .footer--social-media {
     margin-top: 32px;
     text-align: center;
+    a {
+        &:first-child {
+            margin-right: 8px;
+        }
+        &:nth-child(2) {
+            margin-left: 8px;
+        }
+    }
 }
 .footer__social-media-item {
-    &:first-child {
-        margin-right: 16px;
-    }
-    &:nth-child(2) {
-        margin-left: 16px;
+    transition: 0.2s;
+
+    &:hover {
+        padding: 3px;
+        transition: 0.2s;
     }
 }
 .footer--policy {
@@ -85,4 +103,64 @@
     display: block;
     text-align: center;
     margin-top: 6px;
+}
+
+@media (min-width: 768px) {
+    .footer {
+        height: 120px;
+        padding-top: 4px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .footer--tel {
+        margin-top: 0;
+    }
+
+
+
+    .footer--logo_archgako {
+        font-size: 22px;
+    }
+    .footer--logo_sign {
+        margin-left: 24px;
+        font-size: 12px;
+        margin-top: 0;
+    }
+    .footer-tel--item {
+        font-size: 14px;   
+    }
+
+    .footer--adress {
+        font-size: 14px;
+        margin-top: -8px;
+        text-align: left;
+    }
+
+    .footer--mail {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .footer--social-media {
+        margin-top: 0;
+        text-align: right;
+    }
+    .footer__social-media-item {
+        width: 30px;
+        height: 30px;
+        &:hover {
+            padding: 1px;
+        }
+    }
+
+    .footer--policy {
+        font-size: 12px;
+        text-align: right;
+    }
+    .footer--copyright {
+        font-size: 12px;
+        text-align: right;
+    }
 }

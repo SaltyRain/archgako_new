@@ -1,7 +1,18 @@
 .site-nav {
-    // display: none;
     ul {
         list-style: none;
-        
     }
 }
+
+@media (min-width: 1000px) {
+    .site-nav {
+        // position: absolute;
+        ul {
+            display: block;
+        }
+    }
+    .site-nav--item {
+        font-size: 18px;
+    }
+}
+

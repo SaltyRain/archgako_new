@@ -1,0 +1,39 @@
+.maps {
+    display: none;
+    margin-top: 72px;
+}
+
+.maps--item {
+    margin-bottom: 24px;
+
+}
+.maps--image {
+    width: 100%;
+    // max-width: 320px;
+}
+
+.maps--name {
+    display: block;
+    text-align: center;
+    margin-top: 6px;
+    font-size: 18px;
+}
+
+@media (min-width: 768px) {
+    .maps {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 30px;
+
+    }
+    .maps--item {
+        margin-bottom: 0;
+        // padding: 20px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .maps {
+        grid-column-gap: 40px;
+    }
+}

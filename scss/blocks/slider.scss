@@ -3,7 +3,8 @@
     flex-direction: row;
 
     align-items: center;
-    justify-content: space-between;
+    // justify-content: space-between;
+    justify-content: center;
 }
 
 .slider--arrow {
@@ -37,7 +38,7 @@
     }
     @media (min-width: 1180px) {
         width: 1043px;
-        margin: 0 40px;
+        // margin: 0 40px;
     }
 }
 

@@ -27,6 +27,9 @@
 
 .member--info {
     order: 1;
+    &:first-child {
+        margin-left: 16px;
+    }
 }
 .member--name {
     font-family: "Arsenal-Bold";
@@ -65,29 +68,28 @@
     flex-direction: column;
     justify-content: flex-start;
     padding: 0;
+    padding-inline-start: 0px;
     padding-left: 18px;
     li {
         display: flex;
         margin-top: 24px;
     }
-}
-.member-contacts--icon {
-    display: inline-block;
-    width: 35px;
-    height: 35px;
-    background-size: cover;
-    &_instagram {
-        background-image: url('../../img/icons8-instagram.png');
-    }
-    &_phone {
-        background-image: url('../../img/icons8-phone.png');
+    &_no-padding {
+        padding-left: 0;
     }
 }
+
+
 
 .member-contacts--text {
     display: block;
     margin-left: 12px;
     margin-top: 6px;
+    border-bottom: 1px solid transparent;
+    transition: 0.2s;
+    &:hover {
+        border-bottom: 1px solid $black;
+    }
 }
 
 
@@ -109,12 +111,17 @@
     .member--contacts {
         flex-direction: column;
         padding-left: 18px;
+        &_no-padding {
+            padding-left: 0;
+        }
     }
     .member--photo {
         align-self: flex-start;
     }
     .member--name {
         margin-top: 0;
+        text-align: left;
+        padding-left: 28px;
     }
 
     // Картинка справа
@@ -124,6 +131,9 @@
     .member--row_image-right > .member--info {
         margin-right: 20px;
         margin-left: 0;
+    }
+    .member--row_image-right > .member--info > .member--title-wrapper > .member--name {
+        padding-left: 32px;
     }
     .member--photo_right {
         order: 2;

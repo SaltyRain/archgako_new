@@ -1,0 +1,16 @@
+.blog--articles {
+  display: grid;
+  grid-template-columns: 1fr; }
+
+.blog-article--preview-image {
+  height: 210px;
+  margin: 0;
+  padding: 0; }
+  .blog-article--preview-image img {
+    width: 100%;
+    object-fit: cover; }
+
+.blog-article--title {
+  font-family: "Arsenal-Bold";
+  font-size: 18px;
+  margin-top: 24px; }
