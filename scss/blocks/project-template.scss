@@ -1,0 +1,51 @@
+.project-template--heading {
+    margin-bottom: 0px;
+}
+
+.project-template--area {
+    color: $brown;
+    font-size: 20px;
+    margin-top: 26px;
+    margin-bottom: 0px;
+}
+
+.project-template--city {
+    color: $brown;
+    font-size: 16px;
+    margin-top: 11px;
+}
+
+.project-template--part {
+    display: flex;
+    &_v1 {
+        // grid-template-areas:    "cover text"
+        //                         "cover text"
+        //                         "cover sketch";
+    }
+}
+
+// .project-template--big-image {
+//     grid-area: cover;
+// }
+
+// .project-template--text-wrapper {
+//     grid-area: text;
+// }
+
+// .project-template--small-image {
+
+// }
+
+// #sketch1 {
+//     grid-area: sketch1;
+// }
+
+// #sketch2 {
+//     grid-area: sketch2;
+// }
+
+.project-template--big-image {
+    width: 100%;
+    max-width: 440px;
+    object-fit: cover;
+}

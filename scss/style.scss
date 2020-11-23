@@ -35,13 +35,9 @@ button {
 }
 
 p {
-    font-size: 16px;
+    font-size: 15px;
 }
-@media (min-width: 1000px) {
-    p {
-        font-size: 18px;
-    }
-}
+
 
 
 // img {
@@ -126,6 +122,9 @@ p {
 // Article
 @import "./blocks/share.scss";
 @import "./blocks/discuss-project.scss";
+
+// Project-Template
+@import "./blocks/project-template.scss";
 
 // Footer
 @import "./blocks/footer.scss";

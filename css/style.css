@@ -41,11 +41,7 @@ button:focus {
   outline-color: #262626; }
 
 p {
-  font-size: 16px; }
-
-@media (min-width: 1000px) {
-  p {
-    font-size: 18px; } }
+  font-size: 15px; }
 
 .full-width {
   width: 100%;
@@ -237,6 +233,8 @@ p {
 @media (min-width: 1180px) {
   .site-nav ul {
     margin-right: 130px; }
+    .site-nav ul li {
+      margin-left: 18px; }
   .header--call-button {
     right: 360px; } }
 
@@ -1274,6 +1272,28 @@ input[type=checkbox]:focus {
 .discuss-project--button {
   background-color: #C7C2BC;
   color: #262626; }
+
+.project-template--heading {
+  margin-bottom: 0px; }
+
+.project-template--area {
+  color: #AF9888;
+  font-size: 20px;
+  margin-top: 26px;
+  margin-bottom: 0px; }
+
+.project-template--city {
+  color: #AF9888;
+  font-size: 16px;
+  margin-top: 11px; }
+
+.project-template--part {
+  display: flex; }
+
+.project-template--big-image {
+  width: 100%;
+  max-width: 440px;
+  object-fit: cover; }
 
 .footer--wrapper {
   background-color: #AF9888; }
