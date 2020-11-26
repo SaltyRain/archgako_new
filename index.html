@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link href="https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="/css/slider.css">
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/style.css">
     <title>Archgako | Главная</title>
@@ -94,17 +94,20 @@
         <section class="container section--index">
             <h3 class="section--heading">Последние события</h3>
             <div class="slider">
-                <!-- <button class="slider--arrow slider--arrow_left arrow arrow_left"></button> -->
-                <div class="slider--wrapper">
-                    <div class="slider--items-wrapper">
-                        <div class="event slider--item">
-                            <div class="event--image-wrapper">
-                                <img src="./img/news1.jpg" alt="Courtyard party paris design week">
-                                <!-- <div class="event--image-shadow">box</div> -->
+                <button class="slider--arrow slider--arrow_left arrow arrow_left swiper-button-prev"></button>
+                <div class="slider--wrapper swiper-container">
+                    <div class="slider--items-wrapper swiper-wrapper">
+                        <a href="#" class="slider--link swiper-slide">
+                            <div class="event slider--item ">
+                                <div class="event--image-wrapper">
+                                    <img src="./img/news1.jpg" alt="Courtyard party paris design week">
+                                    <!-- <div class="event--image-shadow">box</div> -->
+                                </div>
+                                <p class="event--title">CELEBRATING CRAFTSMANSHIP AND DESIGN MILAN DESIGN WEEK</p>
+                                <span class="event--year">2019</span>
                             </div>
-                            <p class="event--title">CELEBRATING CRAFTSMANSHIP AND DESIGN MILAN DESIGN WEEK</p>
-                            <span class="event--year">2019</span>
-                        </div>
+                        </a>
+                       <a href="#" class="slider--link swiper-slide">
                         <div class="event slider--item">
                             <div class="event--image-wrapper">
                                 <img src="./img/news2.jpg" alt="Courtyard party paris design week">
@@ -113,6 +116,8 @@
                             <p class="event--title">Courtyard party paris design week</p>
                             <span class="event--year">2019</span>
                         </div>
+                       </a>
+                       <a href="#" class="slider--link swiper-slide">
                         <div class="event slider--item">
                             <div class="event--image-wrapper">
                                 <img src="./img/news3.jpg" alt="Courtyard party paris design week">
@@ -121,26 +126,30 @@
                             <p class="event--title">Courtyard party paris design week</p>
                             <span class="event--year">2018</span>
                         </div>
-                        <div class="event slider--item">
-                            <div class="event--image-wrapper">
-                                <img src="./img/news3.jpg" alt="Courtyard party paris design week">
-                                <!-- <div class="event--image-shadow">box</div> -->
+                       </a>
+                        <a href="#" class="slider--link swiper-slide">
+                            <div class="event slider--item">
+                                <div class="event--image-wrapper">
+                                    <img src="./img/news3.jpg" alt="Courtyard party paris design week">
+                                    <!-- <div class="event--image-shadow">box</div> -->
+                                </div>
+                                <p class="event--title">Courtyard party paris design week</p>
+                                <span class="event--year">2019</span>
                             </div>
-                            <p class="event--title">Courtyard party paris design week</p>
-                            <span class="event--year">2019</span>
-                        </div>
-                        <div class="event slider--item">
-                            <div class="event--image-wrapper">
-                                <img src="./img/news3.jpg" alt="Courtyard party paris design week">
-                                <!-- <div class="event--image-shadow">box</div> -->
+                        </a>
+                        <a href="#" class="slider--link swiper-slide">
+                            <div class="event slider--item">
+                                <div class="event--image-wrapper">
+                                    <img src="./img/news3.jpg" alt="Courtyard party paris design week">
+                                    <!-- <div class="event--image-shadow">box</div> -->
+                                </div>
+                                <p class="event--title">Courtyard party paris design week</p>
+                                <span class="event--year">2019</span>
                             </div>
-                            <p class="event--title">Courtyard party paris design week</p>
-                            <span class="event--year">2019</span>
-                        </div>
+                        </a>
                     </div>
                 </div>
-                
-                <!-- <button class="slider--arrow slider--arrow_right arrow arrow_right"></button> -->
+                <button class="slider--arrow slider--arrow_right arrow arrow_right swiper-button-next"></button>
             </div>
         </section>
         
@@ -151,14 +160,21 @@
             </div>
             <div class="bg">
                 <div class="container slider-project">
-                    <div class="slider ">
-                        <!-- <button class="slider--arrow slider--arrow_left arrow arrow_left"></button> -->
-                        <div class="slider--items-wrapper">
-                                <div class="slider-project--image-wrapper">
+                    <div class="slider">
+                        <button class="slider--arrow slider--arrow_left arrow arrow_left swiper-button-prev-project"></button>
+                        <div class="swiper-container projects">
+                            <div class="slider--items-wrapper swiper-wrapper">
+                                <div class="slider-project--image-wrapper swiper-slide">
+                                    <img src="./img/project.jpg" alt="проект">
+                                </div>
+                                <div class="slider-project--image-wrapper swiper-slide">
                                     <img src="./img/project.jpg" alt="проект">
                                 </div>
                         </div>
-                        <!-- <button class="slider--arrow slider--arrow_right arrow arrow_right"></button> -->
+                        <div class="swiper-pagination swiper-pagination-bullets"></div>
+                        </div>
+                        
+                        <button class="slider--arrow slider--arrow_right arrow arrow_right swiper-button-next-project"></button>
                     </div>
 
                     <p class="slider-project--description">
@@ -296,7 +312,49 @@
         </div>
         
     </footer>
-    <script src='./js/index.js'></script>
+
     <script src="./js/animation.js"></script>
+    <script src='./js/index.js' type="module"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+    var swiper = new Swiper(".swiper-container", {
+        slidesPerView: 3,
+        spaceBetween: 20,
+        // slidesPerGroup: 3,
+        autoResize: false,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2
+    },
+    1000: {
+      slidesPerView: 3
+    },
+  }
+});
+
+    var swiper2 = new Swiper(".swiper-container.projects", {
+        slidesPerView: 1,
+        autoResize: false,
+        pagination: {
+            el: '.swiper-pagination',
+        clickable: true
+    },
+    navigation: {
+            nextEl: ".swiper-button-next-project",
+            prevEl: ".swiper-button-prev-project",
+        },
+    hashNavigation: {
+        watchState: true,
+      }
+    });
+</script>
+>>>>>>> a621f739cb20365bbf0cde72d29ed28b066b62e2
 </body>
 </html>
