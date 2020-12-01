@@ -43,10 +43,15 @@ button:focus {
 p {
   font-size: 15px; }
 
+@media (min-width: 1400px) {
+  p {
+    font-size: 17px; } }
+
 .full-width {
   width: 100%;
   max-height: 400px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin-top: 32px;
   margin-bottom: 48px; }
 
@@ -114,6 +119,7 @@ p {
   justify-content: space-between;
   align-items: center;
   height: 70px;
+  position: -webkit-sticky;
   position: sticky;
   z-index: 999; }
 
@@ -462,6 +468,10 @@ p {
   transition: 0.2s; }
   .form--input:first-child {
     margin-top: 10px; }
+  .form--input::-moz-placeholder {
+    color: #4E4A4A; }
+  .form--input:-ms-input-placeholder {
+    color: #4E4A4A; }
   .form--input::placeholder {
     color: #4E4A4A; }
 
@@ -491,6 +501,10 @@ input[type=checkbox]:focus {
   padding: 12px 10px;
   border: 2px solid transparent;
   resize: none; }
+  .form--textarea::-moz-placeholder {
+    color: #4E4A4A; }
+  .form--textarea:-ms-input-placeholder {
+    color: #4E4A4A; }
   .form--textarea::placeholder {
     color: #4E4A4A; }
 
@@ -830,7 +844,8 @@ input[type=checkbox]:focus {
 .slider-project--image-wrapper {
   margin-top: -46px; }
   .slider-project--image-wrapper img {
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     width: 100%;
     height: 220px; }
 
@@ -1026,7 +1041,8 @@ input[type=checkbox]:focus {
   flex-direction: column;
   justify-content: flex-start;
   padding: 0;
-  padding-inline-start: 0px;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
   padding-left: 18px; }
   .member--contacts li {
     display: flex;
@@ -1110,11 +1126,12 @@ input[type=checkbox]:focus {
 .project--baner img {
   width: 100%;
   height: 220px;
-  object-fit: cover; }
+  -o-object-fit: cover;
+     object-fit: cover; }
 
 .project--row {
   display: grid;
-  grid-template-areas: "info" "title" "scheme"; }
+  grid-template-areas: "info" "title" "scheme"; }
 
 .project--column:first-child {
   display: none; }
@@ -1150,7 +1167,8 @@ input[type=checkbox]:focus {
       height: 260px; }
   .project--row {
     grid-template-columns: 1fr 1fr;
-    column-gap: 32px; }
+    -moz-column-gap: 32px;
+         column-gap: 32px; }
   .project--scheme-wrapper {
     margin-top: 0;
     justify-self: flex-end; }
@@ -1196,7 +1214,8 @@ input[type=checkbox]:focus {
   padding: 0; }
   .blog-article--preview-image img {
     width: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     filter: saturate(0);
     transition: 0.2s; }
 
@@ -1317,13 +1336,139 @@ input[type=checkbox]:focus {
   font-size: 16px;
   margin-top: 11px; }
 
-.project-template--part {
-  display: flex; }
-
 .project-template--big-image {
   width: 100%;
   max-width: 440px;
-  object-fit: cover; }
+  -o-object-fit: cover;
+     object-fit: cover; }
+  .project-template--big-image_left {
+    margin-right: 40px; }
+  .project-template--big-image_right {
+    margin-left: 40px; }
+
+.project-template--part {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 60px;
+  margin-top: 40px; }
+
+.project-template--content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .project-template--content-wrapper_w50 {
+    width: 50%; }
+
+.project-template--sketch-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end; }
+  .project-template--sketch-wrapper div:first-child {
+    margin-right: 10px; }
+  .project-template--sketch-wrapper div:nth-child(2) {
+    margin-left: 10px; }
+  .project-template--sketch-wrapper div img {
+    width: 100%;
+    max-width: 300px;
+    -o-object-fit: contain;
+       object-fit: contain; }
+
+.project-template--text-wrapper {
+  margin-bottom: 30px; }
+  .project-template--text-wrapper p:first-child {
+    margin-top: 0;
+    padding-top: 0; }
+
+.project-template--scheme-wrapper img {
+  width: 100%; }
+
+.project-template--explication {
+  font-size: 15px; }
+
+.project-template-part-v2--left {
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 50%; }
+
+.project-template-part-v2--right {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 50%; }
+
+.project-template--image_margin-bottom {
+  margin-bottom: 40px;
+  width: 100%; }
+
+.project-template--image_margin-top {
+  margin-top: 40px; }
+
+.project-template--grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 70px;
+  margin-left: 80px;
+  width: 50%; }
+  .project-template--grid img {
+    width: 100%; }
+
+.project-template--image {
+  width: 100%; }
+
+@media (max-width: 950px) {
+  .project-template--big-image {
+    max-width: 350px; } }
+
+@media (max-width: 768px) {
+  .project-template--big-image {
+    max-width: 300px; }
+  .project-template--grid {
+    grid-column-gap: 30px;
+    grid-row-gap: 20px; } }
+
+@media (max-width: 650px) {
+  .project-template--part {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  .project-template--big-image {
+    display: none; }
+    .project-template--big-image_no-hide {
+      display: block;
+      width: 100%;
+      max-width: none;
+      margin-bottom: 40px; }
+  .project-template--small-image {
+    display: none; }
+    .project-template--small-image_no-hide {
+      display: block; }
+  .project-template--explication {
+    font-size: 13px; }
+  .project-template-part-v2--left {
+    width: 100%;
+    margin-bottom: 32px;
+    margin-right: 0; }
+  .project-template--image_margin-top {
+    margin-top: 0; }
+  .project-template-part-v2--right {
+    width: 100%;
+    align-items: center;
+    margin-left: 0; }
+  .project-template--image_margin-bottom {
+    order: 1; }
+  .project-template--content-wrapper_w50 {
+    width: 100%; }
+  .project-template--grid {
+    display: none; } }
+
+@media (max-width: 400px) {
+  .project-template--sketch-wrapper {
+    align-items: center;
+    flex-direction: column; } }
 
 .footer--wrapper {
   background-color: #AF9888; }
@@ -1364,9 +1509,11 @@ input[type=checkbox]:focus {
     text-decoration: underline; }
 
 .footer--adress {
+  display: block;
   text-align: center;
   font-size: 18px;
   margin-bottom: 0;
+  margin-top: 20px;
   line-height: 1.6em; }
   .footer--adress:hover {
     text-decoration: underline; }
