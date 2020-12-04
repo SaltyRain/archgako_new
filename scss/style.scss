@@ -82,6 +82,21 @@ p {
     margin-bottom: 48px;
 }
 
+.page-text {
+    &_center {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &_tight {
+        max-width: 900px;
+    }
+    &_close-paragraph {
+        margin-top: 4px;
+        margin-bottom: 4px;
+    }
+}
+
 @import "./containers.scss";
 
 // Header
@@ -115,6 +130,11 @@ p {
 @import "./blocks/country.scss";
 @import "./blocks/team+member.scss";
 
+// Services
+@import "./blocks/services-block.scss";
+@import "./blocks/plan-grid.scss";
+@import "./blocks/stages.scss";
+
 // Projects
 @import "./blocks/project.scss";
 
@@ -130,6 +150,12 @@ p {
 
 // Project-Template
 @import "./blocks/project-template.scss";
+
+// 404
+@import "./blocks/p404.scss";
+
+// Policy
+@import "./blocks/policy.scss";
 
 // Footer
 @import "./blocks/footer.scss";
