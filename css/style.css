@@ -131,9 +131,7 @@ p {
   justify-content: space-between;
   align-items: center;
   height: 70px;
-  position: -webkit-sticky;
-  position: sticky;
-  z-index: 999; }
+  position: relative; }
 
 .header--archgako {
   font-size: 22px; }
@@ -178,7 +176,7 @@ p {
   .side-menu {
     display: none;
     top: 0;
-    right: 0;
+    left: 0;
     position: absolute;
     background-color: #C3B5AA;
     height: 100vh;
@@ -187,33 +185,37 @@ p {
     font-size: 20px;
     flex-direction: column !important;
     justify-content: space-between !important;
-    overflow: hidden; }
+    overflow: hidden;
+    padding: 20px 15px; }
   .close {
     outline: 0;
     border: 0;
     background-color: transparent;
     font-size: 30px;
-    width: 10px;
     position: absolute;
     top: 15px;
     right: 20px; }
   .site-nav {
-    margin-top: 20vh; }
+    order: 2;
+    margin-left: 10%; }
+    .site-nav ul {
+      margin: 0;
+      padding: 0; }
   .site-nav--item {
     margin-bottom: 12px; }
   .request {
     display: block !important;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
     background-color: #fff !important;
     color: #262626 !important;
     width: 90vw;
-    position: absolute !important;
-    bottom: 10px; }
+    align-self: center;
+    order: 3; }
   .language {
-    position: absolute;
-    top: 60px;
-    left: 12%; } }
+    order: 1;
+    margin-left: 10%; } }
 
 @media (min-width: 1000px) {
   .side-menu {
@@ -638,6 +640,32 @@ input[type=checkbox]:focus {
     padding-right: 18px; }
   .contacts--icon_big-margin {
     margin-right: 12px; } }
+
+.button-up--wrapper {
+  position: relative; }
+
+.button-up {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: .2s;
+  background-image: url("../../img/Up arrow.png"); }
+  .button-up:hover, .button-up:active {
+    background-image: url("../../img/Up arrow-active.png"); }
+
+@media (min-width: 425px) {
+  .button-up {
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px; } }
+
+@media (min-width: 1870px) {
+  .button-up {
+    right: 12%; } }
 
 .promo {
   color: #C7C2BC;
