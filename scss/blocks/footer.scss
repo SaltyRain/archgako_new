@@ -51,9 +51,11 @@
 }
 
 .footer--adress {
+    display: block;
     text-align: center;
     font-size: 18px;
     margin-bottom: 0;
+    margin-top: 20px;
     line-height: 1.6em;
     &:hover {
         text-decoration: underline;

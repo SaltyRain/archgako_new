@@ -1,9 +1,10 @@
-
+// Mobile
 @media (max-width: 1000px) {
     .side-menu {
         display: none;
         top: 0;
-        right: 0;
+        // right: 0;
+        left: 0;
         position: absolute;
         background-color: $light-brown;
         height: 100vh;
@@ -14,20 +15,29 @@
         flex-direction: column !important;
         justify-content: space-between !important;
         overflow: hidden;
+
+        padding: 20px 15px;
     }
     .close {
+
         outline: 0;
         border: 0;
         background-color: transparent;
         font-size: 30px;
-        width: 10px;
+        // width: 10px;
         position: absolute;
         top: 15px;
         right: 20px;
     }
 
     .site-nav {
-        margin-top: 20vh;
+        // margin-top: 20vh;
+        order: 2;
+        margin-left: 10%;
+        ul {
+            margin: 0;
+            padding: 0;
+        }
     }
     .site-nav--item {
         margin-bottom: 12px;
@@ -37,21 +47,27 @@
         display: block !important;
         margin-left: auto;
         margin-right: auto;
+        text-align: center;
         background-color: #fff !important;
         color: $black !important;
         width: 90vw;
-        // margin-top: 60px;
-        position: absolute !important;
-        bottom: 10px;
+        // position: absolute !important;
+        // bottom: 10px;
+        align-self: center;
+
+        order: 3;
     }
 
     .language {
-        position: absolute;
-        top: 60px;
-        left: 12%;
+        // position: absolute;
+        // top: 60px;
+        // left: 12%;
+        order: 1;
+        margin-left: 10%;
     }
 }
 
+// Desctop
 @media (min-width: 1000px) {
     .side-menu {
         display: flex;

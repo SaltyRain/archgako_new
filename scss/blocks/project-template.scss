@@ -15,37 +15,186 @@
     margin-top: 11px;
 }
 
-.project-template--part {
-    display: flex;
-    &_v1 {
-        // grid-template-areas:    "cover text"
-        //                         "cover text"
-        //                         "cover sketch";
-    }
-}
-
-// .project-template--big-image {
-//     grid-area: cover;
-// }
-
-// .project-template--text-wrapper {
-//     grid-area: text;
-// }
-
-// .project-template--small-image {
-
-// }
-
-// #sketch1 {
-//     grid-area: sketch1;
-// }
-
-// #sketch2 {
-//     grid-area: sketch2;
-// }
-
 .project-template--big-image {
     width: 100%;
     max-width: 440px;
     object-fit: cover;
+    &_left {
+        margin-right: 40px;
+    }
+    &_right {
+        margin-left: 40px;
+    }
+}
+
+.project-template--part {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 60px;
+    margin-top: 40px;
+}
+
+.project-template--content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    // width: 50%; 
+    // margin-right: 40px;
+    &_w50 {
+        width: 50%;
+    }
+}
+.project-template--sketch-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    div {
+        &:first-child {
+            margin-right: 10px;
+        }
+        &:nth-child(2) {
+            margin-left: 10px;
+        }
+        img {
+            width: 100%;
+            max-width: 300px;
+            object-fit: contain;
+        }
+    }
+
+}
+
+.project-template--text-wrapper {
+    margin-bottom: 30px;
+    p {
+        &:first-child {
+            margin-top: 0;
+            padding-top: 0;
+        }
+    }
+}
+
+.project-template--scheme-wrapper {
+    img {
+        width: 100%;
+    }
+}
+.project-template--explication {
+    font-size: 15px;
+}
+
+.project-template-part-v2--left {
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.project-template-part-v2--right {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.project-template--image_margin-bottom {
+    margin-bottom: 40px;
+    width: 100%;
+}
+.project-template--image_margin-top {
+    margin-top: 40px;
+}
+
+.project-template--grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 70px;
+
+    margin-left: 80px;
+    width: 50%;
+    img {
+        width: 100%;
+    }
+    }
+
+.project-template--image {
+    width: 100%;
+}
+@media (max-width: 950px) {
+    .project-template--big-image {
+        max-width: 350px;
+    }
+}
+@media (max-width: 768px) {
+    .project-template--big-image {
+        max-width: 300px;
+    }
+    .project-template--grid {
+        grid-column-gap: 30px;
+        grid-row-gap: 20px;
+    }
+}
+@media (max-width: 650px) {
+    .project-template--part {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .project-template--big-image {
+        display: none;
+        &_no-hide {
+            display: block;
+            width: 100%;
+            max-width: none;
+            margin-bottom: 40px;
+        }
+    }
+    .project-template--small-image {
+        display: none;
+        &_no-hide {
+            display: block;
+        }
+    }
+    .project-template--explication {
+        font-size: 13px;
+    }
+    .project-template-part-v2--left {
+        width: 100%;
+        margin-bottom: 32px;
+        margin-right: 0;
+    }
+    .project-template--image_margin-top {
+        margin-top: 0;
+    }
+
+    .project-template-part-v2--right {
+        width: 100%;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .project-template--image_margin-bottom {
+        order: 1;
+    }
+    
+    .project-template--content-wrapper {
+
+        &_w50 {
+            width: 100%;
+        }
+    }
+
+    .project-template--grid {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    .project-template--sketch-wrapper {
+        align-items: center;
+        flex-direction: column;
+    }
 }
