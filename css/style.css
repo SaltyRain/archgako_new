@@ -882,16 +882,24 @@ input[type=checkbox]:focus {
     .slider--item_max3:last-child {
       margin-right: 0; }
 
-.slider--image-wrapper_max2 {
-  width: calc((1180px - 500px) / 2); }
-
-.slider--image-wrapper_max3 {
-  width: calc((1180px - 300px) / 3); }
+.slider--image-wrapper {
+  position: relative; }
+  .slider--image-wrapper_max2 {
+    width: calc((1180px - 500px) / 2); }
+  .slider--image-wrapper_max3 {
+    width: calc((1180px - 300px) / 3); }
 
 .slider--image {
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain; }
+
+.slider--image-shadow {
+  background: #000;
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  top: 0; }
 
 .slider--desc {
   margin: 0;

@@ -5,6 +5,7 @@
     align-items: center;
     justify-content: center;
     margin-top: 82px;
+
     &_latest-events > .slider--swiper {
         margin-top: -80px;
     }
@@ -91,6 +92,7 @@
 }
 
 .slider--image-wrapper {
+    position: relative;
     &_max2 {
         width: calc((1180px - 500px) / 2);
     }
@@ -102,6 +104,16 @@
     width: 100%;
     object-fit: contain;
 }
+.slider--image-shadow {
+    background: #000;
+    // width: 100%;
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    // z-index: -2;
+}
+
 
 .slider--desc {
     margin: 0;
