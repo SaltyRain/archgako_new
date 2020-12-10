@@ -77,12 +77,7 @@
                     <span class="site-tel--number">+7 (911) 162 04 82</span>
                 </a>
 
-                <a href="contacts.html#request-form" class="button request"
-                    >Напишите нам</a
-                >
-
-                <div class="language">
-                    <span>ru | en</span>
+                    <button class="button service-info--button" onclick="PopUpShow()">Добавить услугу</button>
                 </div>
             </div>
         </header>
@@ -1922,50 +1917,118 @@
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
+        
+    </footer>
 
-        <script src="./js/animation.js"></script>
-        <script src="./js/services.js"></script>
-        <script src="./js/index.js" type="module"></script>
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        <script>
-            var swiper = new Swiper(".swiper-container", {
-                slidesPerView: 3,
-                spaceBetween: 20,
-                // slidesPerGroup: 3,
-                autoResize: false,
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                },
-                breakpoints: {
-                    320: {
-                        slidesPerView: 1,
-                    },
-                    768: {
-                        slidesPerView: 2,
-                    },
-                    1000: {
-                        slidesPerView: 3,
-                    },
-                },
-            });
 
-            var swiper2 = new Swiper(".swiper-container.projects", {
-                slidesPerView: 1,
-                autoResize: false,
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-                },
-                navigation: {
-                    nextEl: ".swiper-button-next-project",
-                    prevEl: ".swiper-button-prev-project",
-                },
-                hashNavigation: {
-                    watchState: true,
-                },
-            });
-        </script>
-    </body>
+    <div class="b-popup" id="popup1">
+        <div class="b-popup-content">
+            
+            <form id="services-form" class="b-popup--form form">
+                <h4 class="b-popup--title">Заказать услуги</h4>
+                <fieldset class="b-popup--fieldset b-popup--choosed-services">
+                    <legend class="visually-hidden">Выбранные услуги:</legend>
+                    <!-- ... -->
+                </fieldset>
+
+                <div class="b-popup--form-container">
+                    <div class="b-popup--col">
+                        <fieldset class="b-popup--fieldset">
+                            <legend class="visually-hidden">Ваши контактные данные</legend>
+                            <ul role="none" class="b-popup--ul">
+                                <li class="b-popup--form-item">
+                                    <label class="visually-hidden" for="name">Ваше имя *</label>
+                                    <input class="form--input b-popup--form-input" type="text" id="name" name="user_name" placeholder="Ваше имя *" required>
+                                </li>
+                                <li class="b-popup--form-item">
+                                    <label class="visually-hidden" for="tel">Телефон *</label>
+                                    <input class="form--input b-popup--form-input" type="tel" id="tel" name="user_tel" placeholder="Телефон *" required>
+                                </li>
+                                <li class="b-popup--form-item">
+                                    <label  class="visually-hidden" for="mail">Email *</label>
+                                    <input class="form--input b-popup--form-input " type="email" id="mail" name="user_mail" placeholder="Email *" required>
+                                </li>
+                                <li class="b-popup--form-item">
+                                    <select class="form--select b-popup--form-select" form="services-form" required>
+                                        <option class="form--option">Тип объекта *</option>
+                                        <option class="form--option">Жилой интерьер/Квартира</option>
+                                        <option class="form--option">Архитектура/Загородный дом</option>
+                                        <option class="form--option">Офис</option>
+                                        <option class="form--option">Ресторан/Бар/Кафе</option>
+                                        <option class="form--option">Гостиница/Отель</option>
+                                        <option class="form--option" value="">Другое</option>
+                                      </select>
+                                </li>
+                                <li class="b-popup--form-item ">
+                                    <label  class="visually-hidden" for="area">Площадь объекта</label>
+                                    <input class="form--input b-popup--form-input" type="text" id="area" name="user_area" placeholder="Площадь объекта" required>
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </div>
+                    
+                    <div class="b-popup--col b-popup--comment-and-sumbit">
+                        <div class="b-popup--row">
+                            <div class="b-popup--form-input">
+                                <label class="visually-hidden" for="comments">Комментарий к заказу</label>
+                                <textarea class="form--textarea b-popup--comment" name="user_comment" id="comment" placeholder="Комментарий к заказу" rows="6"></textarea>
+                            </div>
+                            <div class="b-popup--form-input">
+                                
+                                <input class="inputfile" type="file" name="user_files" id="files" 
+                                    data-multiple-caption="{count} файл(а/ов) выбраны " 
+                                    multiple 
+                                    accept=".png, .jpg, .jpeg .pdf .doc .xlsx"></input>
+                                <label for="files">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
+                                        <path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"></path>
+                                    </svg>
+                                    <span class="inputfile--span">Прикрепить файлы</span>
+                                </label>
+                            </div>
+                            <div class="b-popup--form-input form--policy-acceptance ">
+                                <div class="checkbox">
+                                    <input class="custom-checkbox" type="checkbox" id="request-form-accept-checkbox" name="color-1" value="indigo">
+                                    <label for="request-form-accept-checkbox">Даю согласие на обработку персональных данных в соответствии с<a href="policy.html" >правилами пользования сайтом.</a></label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="b-popup--row">
+                            <div class="b-popup--form-input">
+                                <input class="form--button button button_disable b-popup--button" type="submit" value="Отправить">
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+              </form>
+        <button class="b-popup--close" onclick="PopUpHide()">&#10006</button>
+        </div>
+    </div>
+
+    <script src="./js/animation.js"></script>
+    <script src='./js/index.js' type="module"></script>
+    <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            //Скрыть PopUp при загрузке страницы    
+            PopUpHide();
+        });
+        //Функция отображения PopUp
+        function PopUpShow(){
+            $("#popup1").show();
+        }
+        //Функция скрытия PopUp
+        function PopUpHide(){
+            $("#popup1").hide();
+        }
+    </script>
+    <script src="./js/inputfile.js">
+    </script>
+</body>
 </html>
