@@ -1,0 +1,142 @@
+.b-popup{
+    width:100%;
+    min-height:100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow:hidden;
+    position:fixed;
+    top:0px;
+}
+.b-popup .b-popup-content{
+    position: relative;
+    width: 972px;
+    // height: 556px;
+
+
+    margin: 8% auto 0px auto;
+    padding: 20px 40px 30px 40px;
+    background-color: #FFFFFF;
+    // border-radius:5px;
+    box-shadow: 0px 0px 10px $form-brown;
+    z-index: 10;
+}
+
+
+.b-popup--close {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    // background-color: red;
+    color: $brown;
+    background: transparent;
+    outline: 0;
+    border: 0;
+    font-size: 1.44em;
+}
+
+.b-popup--title {
+    font-size: 26px;
+    font-weight: normal;
+    padding-top: 0;
+    padding-bottom: 14px;
+    margin: 0;
+}
+
+.b-popup--fieldset {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    min-width: 0;
+}
+.b-popup--choosed-services {
+    display: none;
+}
+
+body:not(:-moz-handler-blocked) fieldset {
+    display: table-cell;
+  }
+
+.b-popup--form-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.b-popup--col {
+    width: 47%;
+}
+
+.b-popup--comment-and-sumbit {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.b-popup--ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.b-popup--form {
+    width: 100%;
+    max-width: none;
+}
+
+.b-popup--form-item {
+    width: 100%;
+}
+
+
+.b-popup--comment {
+    border: 2px solid #D6D6D6;
+    background: #ffffff;
+
+}
+
+.b-popup--button{
+    float: right;
+}
+
+
+
+@media (max-height: 557px) {
+    .b-popup .b-popup-content {
+        margin-top: 3%;
+    }
+}
+
+@media (max-width: 1040px) {
+    .b-popup .b-popup-content {
+        width: 90%;
+    }
+}
+@media (max-width: 768px) {
+    .b-popup--title {
+        font-size: 22px;
+    }
+
+}
+
+@media (max-width: 650px) {
+    .b-popup .b-popup-content{
+        max-height: 90vh;
+    }
+    .b-popup--form-container {
+        flex-direction: column;
+    }
+    .b-popup--col {
+        width: 100%;
+    }
+
+    .b-popup--form-input, .b-popup--form-select {
+        margin-top: 10px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 380px) {
+    .b-popup .b-popup-content{
+        padding: 20px 15px 30px 15px;
+    }
+}

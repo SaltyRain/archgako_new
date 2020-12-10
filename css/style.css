@@ -35,10 +35,10 @@ a {
   color: inherit;
   text-decoration: none; }
   a:focus {
-    outline-color: #262626; }
+    outline-color: #D6D6D6; }
 
 button:focus {
-  outline-color: #262626; }
+  outline-color: #D6D6D6; }
 
 p {
   font-size: 15px; }
@@ -243,7 +243,6 @@ p {
     position: relative; }
   .header--call-button {
     position: absolute;
-    z-index: 2;
     float: right;
     top: 24px;
     right: 320px; }
@@ -486,21 +485,52 @@ p {
   .form--input::placeholder {
     color: #4E4A4A; }
 
+.form--select {
+  width: 100%;
+  height: 45px;
+  background-color: #D6D6D6;
+  border: 0;
+  border-radius: 0;
+  margin-top: 16px;
+  padding: 4px 10px;
+  margin-bottom: 4px;
+  border: 2px solid transparent;
+  border-radius: 0;
+  cursor: pointer;
+  transition: 0.2s; }
+
+.form--option {
+  background-color: #D6D6D6;
+  color: #4E4A4A;
+  cursor: pointer; }
+  .form--option:hover {
+    background: #000; }
+
+option {
+  background-color: #858585;
+  color: #4E4A4A;
+  cursor: pointer; }
+  option:hover {
+    background: #000; }
+
 input:focus, textarea:focus {
-  outline: navy;
-  background-color: #e3e3e3; }
+  background-color: #e3e3e3;
+  outline-color: #D6D6D6;
+  border-radius: 0; }
 
 textarea:focus {
-  border: 2px solid #262626;
+  border: 2px solid #5c5c5c;
   border-radius: 0; }
 
 input:focus {
-  border: 2px solid #262626;
-  border-radius: 0px; }
+  border: 2px solid #5c5c5c;
+  border-radius: 0;
+  outline-color: #5c5c5c; }
 
 input[type=checkbox]:focus {
-  border: 2px solid #262626;
-  border-radius: 0px; }
+  border: 2px solid #5c5c5c;
+  border-radius: 0;
+  outline-color: #5c5c5c; }
 
 .form--textarea {
   width: 100%;
@@ -564,13 +594,12 @@ input[type=checkbox]:focus {
 
 /* стили при наведении курсора на checkbox */
 .custom-checkbox:not(:disabled):not(:checked) + label:hover::before {
-  box-shadow: 0 0 0 0.2rem rgba(91, 93, 95, 0.25);
   transition: 0.2s; }
 
 /* стили для активного чекбокса (при нажатии на него) */
 .custom-checkbox:not(:disabled):active + label::before {
-  border-color: #262626;
-  box-shadow: 0 0 0 0.2rem rgba(91, 93, 95, 0.25);
+  border-color: #D6D6D6;
+  outline-color: #D6D6D6;
   transition: 0.2s; }
 
 /* стили для чекбокса, находящегося в фокусе */
@@ -580,14 +609,12 @@ input[type=checkbox]:focus {
 
 /* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
 .custom-checkbox:focus:not(:checked) + label::before {
-  border-color: #262626;
   box-shadow: 0 0 0 0.2rem rgba(91, 93, 95, 0.25);
   transition: 0.2s; }
 
 /* стили для чекбокса, находящегося в состоянии checked */
 .custom-checkbox:checked + label::before {
   transition: 0.2s;
-  border-color: #262626;
   background-color: #262626;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e"); }
 
@@ -666,6 +693,113 @@ input[type=checkbox]:focus {
 @media (min-width: 1870px) {
   .button-up {
     right: 12%; } }
+
+.b-popup {
+  width: 100%;
+  min-height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  position: fixed;
+  top: 0px; }
+
+.b-popup .b-popup-content {
+  position: relative;
+  width: 972px;
+  margin: 8% auto 0px auto;
+  padding: 20px 40px 30px 40px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 10px #4E4A4A;
+  z-index: 10; }
+
+.b-popup--close {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #AF9888;
+  background: transparent;
+  outline: 0;
+  border: 0;
+  font-size: 1.44em; }
+
+.b-popup--title {
+  font-size: 26px;
+  font-weight: normal;
+  padding-top: 0;
+  padding-bottom: 14px;
+  margin: 0; }
+
+.b-popup--fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  min-width: 0; }
+
+.b-popup--choosed-services {
+  display: none; }
+
+body:not(:-moz-handler-blocked) fieldset {
+  display: table-cell; }
+
+.b-popup--form-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%; }
+
+.b-popup--col {
+  width: 47%; }
+
+.b-popup--comment-and-sumbit {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.b-popup--ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+.b-popup--form {
+  width: 100%;
+  max-width: none; }
+
+.b-popup--form-item {
+  width: 100%; }
+
+.b-popup--comment {
+  border: 2px solid #D6D6D6;
+  background: #ffffff; }
+
+.b-popup--button {
+  float: right; }
+
+@media (max-height: 557px) {
+  .b-popup .b-popup-content {
+    margin-top: 3%; } }
+
+@media (max-width: 1040px) {
+  .b-popup .b-popup-content {
+    width: 90%; } }
+
+@media (max-width: 768px) {
+  .b-popup--title {
+    font-size: 22px; } }
+
+@media (max-width: 650px) {
+  .b-popup .b-popup-content {
+    max-height: 90vh; }
+  .b-popup--form-container {
+    flex-direction: column; }
+  .b-popup--col {
+    width: 100%; }
+  .b-popup--form-input, .b-popup--form-select {
+    margin-top: 10px;
+    height: 35px; } }
+
+@media (max-width: 380px) {
+  .b-popup .b-popup-content {
+    padding: 20px 15px 30px 15px; } }
 
 .promo {
   color: #C7C2BC;
@@ -2256,3 +2390,41 @@ input[type=checkbox]:focus {
   .footer--copyright {
     font-size: 12px;
     text-align: right; } }
+
+.inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1; }
+
+.inputfile + label {
+  color: #000;
+  background-color: #C7C2BC;
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 14px; }
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+  background-color: #C3B5AA; }
+
+.inputfile + label {
+  cursor: pointer;
+  /* "hand" cursor */ }
+
+.inputfile:focus + label {
+  outline: 1px dotted #000;
+  outline: -webkit-focus-ring-color auto 5px; }
+
+.inputfile + label * {
+  pointer-events: none; }
+
+.inputfile + label svg {
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  fill: currentColor;
+  margin-top: -0.25em;
+  margin-right: 0.25em; }
