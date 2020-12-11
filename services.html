@@ -8,10 +8,15 @@
     <link rel="stylesheet" href="/css/slider.css">
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Archgako | Главная</title>
 </head>
 <body>
-    <header class="header container">
+    <header class="header container animate__animated  animate__fadeIn animate__delay-1s" id="header">
         
         <a href="index.html" class="header--site-logo site-logo">
             <span class="header--archgako site-logo--archgako">ARCHGAKÒ</span>
@@ -39,7 +44,7 @@
                 <ul>
                     <li class="site-nav--item"><a href="about.html" >О студии</a></li>
                     <li class="site-nav--item"><a href="projects.html" >Проекты</a></li>
-                    <li class="site-nav--item"><a href="services.html" >Услуги</a></li>
+                    <li class="site-nav--item"><a href="services.php" >Услуги</a></li>
                     <li class="site-nav--item"><a href="blog.html" >Блог</a></li>
                     <li class="site-nav--item"><a href="contacts.html" >Контакты</a></li>
                 </ul>
@@ -711,13 +716,13 @@
             </div>
 
         </section>
-        <section class=" section--advantages">
+        <section class="section--advantages">
             <div class="dot"></div>
             <h2 class="section--heading">Проект с ARCHGAKÒ  - это</h2>
             <div class="advantages">
                 <div class="advantages--item advantage">
                     <div class="advantage--image">
-                        <img src="./img/p1.png" alt="преимущество 1">
+                        <img src="./img/adv-1.png" alt="преимущество 1">
                     </div>
                     <div class="advantage--text">
                         <span class="advantage--heading">ИНДИВИДУАЛЬНОЕ РЕШЕНИЕ</span>
@@ -727,7 +732,7 @@
 
                 <div class="advantages--item advantage">
                     <div class="advantage--image">
-                        <img src="./img/p2.png" alt="преимущество 1">
+                        <img src="./img/adv-2.png" alt="преимущество 1">
                     </div>
                     <div class="advantage--text">
                         <span class="advantage--heading">ТЕХНОЛОГИЯ И ЭРГОНОМИЧНОСТЬ</span>
@@ -737,7 +742,7 @@
 
                 <div class="advantages--item advantage">
                     <div class="advantage--image">
-                        <img src="./img/p3.png" alt="преимущество 1">
+                        <img src="./img/adv-3.png" alt="преимущество 1">
                     </div>
                     <div class="advantage--text">
                         <span class="advantage--heading">СРОКИ ВЫПОЛНЕНИЯ РАБОТ</span>
@@ -747,7 +752,7 @@
 
                 <div class="advantages--item advantage">
                     <div class="advantage--image">
-                        <img src="./img/p4.png" alt="преимущество 1">
+                        <img src="./img/adv-4.png" alt="преимущество 1">
                     </div>
                     <div class="advantage--text">
                         <span class="advantage--heading">ЭКОНОМИЯ ВАШИХ РЕСУРСОВ</span>
@@ -757,7 +762,7 @@
 
                 <div class="advantages--item advantage">
                     <div class="advantage--image">
-                        <img src="./img/p5.png" alt="преимущество 1">
+                        <img src="./img/adv-5.png" alt="преимущество 1">
                     </div>
                     <div class="advantage--text">
                         <span class="advantage--heading">РЕЗУЛЬТАТ</span>
@@ -767,7 +772,7 @@
 
                 <div class="advantages--item advantage">
                     <div class="advantage--image">
-                        <img src="./img/p6.png" alt="преимущество 1">
+                        <img src="./img/adv-6.png" alt="преимущество 1">
                     </div>
                     <div class="advantage--text">
                         <span class="advantage--heading">ПЕРСОНАЛЬНАЯ СВЯЗЬ</span>
@@ -777,6 +782,9 @@
             </div>
         </section>
     </main>
+    <div class="container button-up--wrapper">
+        <a href="#header" id="buttonUp" class="button-up"></a>
+    </div>
     <footer class="footer--wrapper">
         <div class="container">
             <div class="footer">

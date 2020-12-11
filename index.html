@@ -8,10 +8,15 @@
     <link rel="stylesheet" href="/css/slider.css">
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Archgako | Главная</title>
 </head>
 <body>
-    <header class="header container" id="header">
+    <header class="header container animate__animated  animate__fadeIn animate__delay-1s" id="header">
         
         <a href="index.html" class="header--site-logo site-logo">
             <span class="header--archgako site-logo--archgako">ARCHGAKÒ</span>
@@ -58,7 +63,7 @@
         
     </header>
     <main>
-        <section class="promo container">
+        <section class="promo container animate__animated animate__fadeIn">
             <h1 class="visually-hidden">АРХИТЕКТУРНОЕ БЮРО Archgako</h1>
             <div class="promo-logo site-logo">
                 <span class="promo-logo--archgako site-logo--archgako">ARCHGAKÒ</span>
@@ -67,7 +72,7 @@
             <!-- Добавить стрелку, которая прокрутит страницу ниже -->
             </div>
         </section>
-        <section class="about container">
+        <section class="about container" data-aos="fade-up">
             <div class="about--photo-wrapper">
                 <h2 class="about--title">О студии</h2>
                 <img class="about--photo" src="./img/about.jpg" alt="Фото основателей студии">
@@ -92,7 +97,7 @@
             </div>
         </section>
         
-        <section class="container section--index">
+        <section class="container section--index" data-aos="fade-up">
             <h3 class="section--heading">Последние события</h3>
             <div class="slider">
                 <button class="slider--arrow slider--arrow_left arrow arrow_left swiper-button-prev"></button>
@@ -196,12 +201,12 @@
             </div>
         </section>
         
-        <section>
+        <section >
             <div class="container section--index">
-                <div class="dot"></div>
-                <h2 class="section--heading section--heading_projects">Проекты</h2>
+                <div class="dot" data-aos="fade-up"></div>
+                <h2 class="section--heading section--heading_projects" data-aos="fade-up">Проекты</h2>
             </div>
-            <div class="bg">
+            <div class="bg" data-aos="fade-up">
                 <div class="container slider-project">
                     <div class="slider">
                         <button class="slider--arrow slider--arrow_left arrow arrow_left swiper-button-prev-project"></button>
@@ -230,12 +235,12 @@
         </section>
 
         <section class="container section--index section--advantages">
-            <div class="dot"></div>
-            <h2 class="section--heading">Проект с ARCHGAKÒ  - это</h2>
+            <div class="dot" data-aos="fade-up"></div>
+            <h2 class="section--heading" data-aos="fade-up">Проект с ARCHGAKÒ  - это</h2>
             <div class="advantages">
-                <div class="advantages--item advantage">
+                <div class="advantages--item advantage" data-aos="fade-up">
                     <div class="advantage--image">
-                        <img src="./img/p1.png" alt="преимущество 1">
+                        <img src="./img/adv-1.png" alt="преимущество 1">
                     </div>
                     <div class="advantage--text">
                         <span class="advantage--heading">ИНДИВИДУАЛЬНОЕ РЕШЕНИЕ</span>
@@ -243,9 +248,9 @@
                     </div>
                 </div>
 
-                <div class="advantages--item advantage">
+                <div class="advantages--item advantage" data-aos="fade-up">
                     <div class="advantage--image">
-                        <img src="./img/p2.png" alt="преимущество 1">
+                        <img src="./img/adv-2.png" alt="преимущество 1">
                     </div>
                     <div class="advantage--text">
                         <span class="advantage--heading">ТЕХНОЛОГИЯ И ЭРГОНОМИЧНОСТЬ</span>
@@ -253,9 +258,9 @@
                     </div>
                 </div>
 
-                <div class="advantages--item advantage">
+                <div class="advantages--item advantage" data-aos="fade-up">
                     <div class="advantage--image">
-                        <img src="./img/p3.png" alt="преимущество 1">
+                        <img src="./img/adv-3.png" alt="преимущество 1">
                     </div>
                     <div class="advantage--text">
                         <span class="advantage--heading">СРОКИ ВЫПОЛНЕНИЯ РАБОТ</span>
@@ -263,9 +268,9 @@
                     </div>
                 </div>
 
-                <div class="advantages--item advantage">
+                <div class="advantages--item advantage" data-aos="fade-up">
                     <div class="advantage--image">
-                        <img src="./img/p4.png" alt="преимущество 1">
+                        <img src="./img/adv-4.png" alt="преимущество 1">
                     </div>
                     <div class="advantage--text">
                         <span class="advantage--heading">ЭКОНОМИЯ ВАШИХ РЕСУРСОВ</span>
@@ -273,9 +278,9 @@
                     </div>
                 </div>
 
-                <div class="advantages--item advantage">
+                <div class="advantages--item advantage" data-aos="fade-up">
                     <div class="advantage--image">
-                        <img src="./img/p5.png" alt="преимущество 1">
+                        <img src="./img/adv-5.png" alt="преимущество 1">
                     </div>
                     <div class="advantage--text">
                         <span class="advantage--heading">РЕЗУЛЬТАТ</span>
@@ -283,9 +288,9 @@
                     </div>
                 </div>
 
-                <div class="advantages--item advantage">
+                <div class="advantages--item advantage" data-aos="fade-up">
                     <div class="advantage--image">
-                        <img src="./img/p6.png" alt="преимущество 1">
+                        <img src="./img/adv-6.png" alt="преимущество 1">
                     </div>
                     <div class="advantage--text">
                         <span class="advantage--heading">ПЕРСОНАЛЬНАЯ СВЯЗЬ</span>
@@ -295,7 +300,7 @@
             </div>
         </section>
 
-        <section class="container request-form section--index">
+        <section class="container request-form section--index" data-aos="fade-up">
             <div class="contacts--row">
                 <div class="contacts--col">
                     <h3 class="section--heading section--heading_left request-form--title">Обратиться в студию</h3>
@@ -344,7 +349,6 @@
         
                 <div class="footer--column">
                     <a href="https://yandex.ru/maps/?pt=37.647298,55.761558&z=18&l=map" class="footer--adress">Москва, улица Макаренко, 5с 1а, <span class="footer--br">ст. м.Чистые пруды</span></a>
-                    <!-- <p class="footer--adress">Москва, улица Макаренко, 5с 1а, <span class="footer--br">ст. м.Чистые пруды</span></p> -->
                     <a href="mailto:archgako@gmail.com" class="footer--mail">archgako@gmail.com</a>
                 </div>
         
@@ -403,5 +407,30 @@
       }
     });
 </script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
+
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 120, // offset (in px) from the original trigger point
+  delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 800, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});
+  </script>
 </body>
 </html>
