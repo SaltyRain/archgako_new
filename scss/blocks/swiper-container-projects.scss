@@ -1,0 +1,24 @@
+.swiper-container-projects {
+    display: flex;
+    align-items: center;
+    padding-bottom: 29px;
+}
+
+.swiper-button-prev-project {
+    position: absolute;
+    z-index: 99;
+    left: 1%;
+}
+
+.swiper-button-next-project {
+    position: absolute;
+    right: 1%;
+    z-index: 99;
+}
+
+.swiper-button-prev-project > .slider--triangle_left {
+    border-right: 20px solid #e8e5e1;
+}
+.swiper-button-next-project > .slider--triangle_right {
+    border-left: 20px solid #e8e5e1;
+}

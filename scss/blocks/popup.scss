@@ -1,25 +1,24 @@
-.b-popup{
-    width:100%;
-    min-height:100%;
-    background-color: rgba(0,0,0,0.5);
-    overflow:hidden;
-    position:fixed;
-    top:0px;
+.b-popup {
+    width: 100%;
+    min-height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+    z-index: 2;
 }
-.b-popup .b-popup-content{
+.b-popup .b-popup-content {
     position: relative;
     width: 972px;
     // height: 556px;
 
-
     margin: 8% auto 0px auto;
     padding: 20px 40px 30px 40px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     // border-radius:5px;
     box-shadow: 0px 0px 10px $form-brown;
     z-index: 10;
 }
-
 
 .b-popup--close {
     cursor: pointer;
@@ -54,7 +53,7 @@
 
 body:not(:-moz-handler-blocked) fieldset {
     display: table-cell;
-  }
+}
 
 .b-popup--form-container {
     display: flex;
@@ -87,18 +86,29 @@ body:not(:-moz-handler-blocked) fieldset {
     width: 100%;
 }
 
-
 .b-popup--comment {
-    border: 2px solid #D6D6D6;
+    border: 2px solid #d6d6d6;
     background: #ffffff;
-
 }
 
-.b-popup--button{
+.b-popup--button {
     float: right;
 }
 
-
+.popup--cart {
+    border: 0;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    background-image: url("../../img/cart.png");
+    background-size: contain;
+    top: 55%;
+    right: 10%;
+    position: fixed;
+    z-index: 0;
+    width: 70px;
+    height: 70px;
+}
 
 @media (max-height: 557px) {
     .b-popup .b-popup-content {
@@ -115,11 +125,10 @@ body:not(:-moz-handler-blocked) fieldset {
     .b-popup--title {
         font-size: 22px;
     }
-
 }
 
 @media (max-width: 650px) {
-    .b-popup .b-popup-content{
+    .b-popup .b-popup-content {
         max-height: 90vh;
     }
     .b-popup--form-container {
@@ -129,14 +138,15 @@ body:not(:-moz-handler-blocked) fieldset {
         width: 100%;
     }
 
-    .b-popup--form-input, .b-popup--form-select {
+    .b-popup--form-input,
+    .b-popup--form-select {
         margin-top: 10px;
         height: 35px;
     }
 }
 
 @media (max-width: 380px) {
-    .b-popup .b-popup-content{
+    .b-popup .b-popup-content {
         padding: 20px 15px 30px 15px;
     }
 }

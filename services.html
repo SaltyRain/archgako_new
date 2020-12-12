@@ -77,7 +77,7 @@
                     <span class="site-tel--number">+7 (911) 162 04 82</span>
                 </a>
 
-                    <button class="button service-info--button" onclick="PopUpShow()">Добавить услугу</button>
+                    <button class="button " onclick="PopUpShow()">Добавить услугу</button>
                 </div>
             </div>
         </header>
@@ -1929,7 +1929,7 @@
                 <h4 class="b-popup--title">Заказать услуги</h4>
                 <fieldset class="b-popup--fieldset b-popup--choosed-services">
                     <legend class="visually-hidden">Выбранные услуги:</legend>
-                    <!-- ... -->
+                    
                 </fieldset>
 
                 <div class="b-popup--form-container">
@@ -1943,7 +1943,7 @@
                                 </li>
                                 <li class="b-popup--form-item">
                                     <label class="visually-hidden" for="tel">Телефон *</label>
-                                    <input class="form--input b-popup--form-input" type="tel" id="tel" name="user_tel" placeholder="Телефон *" required>
+                                    <input class="form--input b-popup--form-input" type="tel" id="tel" name="user_tel" pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" placeholder="Телефон *" required>
                                 </li>
                                 <li class="b-popup--form-item">
                                     <label  class="visually-hidden" for="mail">Email *</label>
@@ -2009,10 +2009,12 @@
               </form>
         <button class="b-popup--close" onclick="PopUpHide()">&#10006</button>
         </div>
+        
     </div>
-
+    <button class="popup--cart" onclick="PopUpShow()"></button>
     <script src="./js/animation.js"></script>
     <script src='./js/index.js' type="module"></script>
+    <script src='./js/services.js' type="module"></script>
     <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
     <script>
         $(document).ready(function(){
@@ -2022,13 +2024,15 @@
         //Функция отображения PopUp
         function PopUpShow(){
             $("#popup1").show();
+            document.body.style.overflow = 'hidden';
         }
         //Функция скрытия PopUp
         function PopUpHide(){
             $("#popup1").hide();
+            document.body.style.overflowY = 'scroll';
         }
     </script>
     <script src="./js/inputfile.js">
-    </script>
+    </script> 
 </body>
 </html>

@@ -165,14 +165,14 @@
                 <div class="contacts--col">
                     <form action="" class="form form_short">
                         <div class="form--row">
-                            <input class="form--input" type="text" name="fio" placeholder="Ваше имя*"/>
+                            <input class="form--input" type="text" name="fio" placeholder="Ваше имя*" required/>
                         </div>
                         <div class="form--row">
-                            <input class="form--input" type="tel" name="tel" placeholder="Телефон*"/>
+                            <input class="form--input" type="tel" name="tel" pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" placeholder="Телефон*" required/>
                         </div>
                         <div class="form--row form--policy-acceptance">
                             <div class="checkbox">
-                                <input class="custom-checkbox" type="checkbox" id="request-form-accept-checkbox" name="color-1" value="indigo">
+                                <input class="custom-checkbox" type="checkbox" id="request-form-accept-checkbox" name="color-1" value="indigo" required>
                                 <label for="request-form-accept-checkbox">Даю согласие на обработку персональных данных в соответствии с<a href="#" >правилами пользования сайтом.</a></label>
                             </div>
                         </div>
