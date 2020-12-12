@@ -100,7 +100,9 @@
         <section class="container section--index" data-aos="fade-up">
             <h3 class="section--heading">Последние события</h3>
             <div class="slider">
-                <button class="slider--arrow slider--arrow_left arrow arrow_left swiper-button-prev"></button>
+                <button type="button" class="arrow swiper-button-prev">
+                    <div class="slider--triangle slider--triangle_left"></div>
+                </button>
                 <div class="slider--wrapper swiper-container">
                     <div class="slider--items-wrapper swiper-wrapper">
                         <a href="#" class="slider--link swiper-slide">
@@ -155,47 +157,7 @@
                         </a>
                     </div>
                 </div>
-                <button class="slider--arrow slider--arrow_right arrow arrow_right swiper-button-next"></button>
-            </div>
-
-            <div class="slider slider_latest-events">
-                <button class="slider--swiper slider--swiper_left">
-                    <div class="slider--triangle slider--triangle_left"></div>
-                </button>
-
-                <div class="slider--inner slider--inner_max3">
-                    <div class="slider--item slider--item_max3">
-                        <a href="" class="slider--link">
-                            <div class="slider--image-wrapper slider--image-wrapper_max3">
-                                <img src="./img/news1.jpg" alt="" class="slider--image">
-                                <div class="slider--image-shadow"></div>   
-                            </div>
-                            
-                            <p class="slider--desc slider--desc_uppercase slider--desc_left">CELEBRATING CRAFTSMANSHIP AND DESIGN MILAN DESIGN WEEK</p>
-                            <p class="slider--desc slider--desc_uppercase slider--desc_left">2019</p>
-                        </a>
-                    </div>
-                    <div class="slider--item slider--item_2_temporary-class slider--item_max3">
-                        <a href="" class="slider--link">
-                            <div class="slider--image-wrapper slider--image-wrapper_max3">
-                                <img src="./img/news2.jpg" alt="" class="slider--image">
-                            </div>
-                            <p class="slider--desc slider--desc_uppercase slider--desc_left">COUNTRYARD PARTY PARIS DESIGN WEEK</p>
-                            <p class="slider--desc slider--desc_uppercase slider--desc_left">2019</p>
-                        </a>
-                    </div>
-                    <div class="slider--item slider--item_3_temporary-class slider--item_max3">
-                        <a href="" class="slider--link">
-                            <div class="slider--image-wrapper slider--image-wrapper_max3">
-                                <img src="./img/news3.jpg" alt="" class="slider--image">
-                            </div>
-                            <p class="slider--desc slider--desc_uppercase slider--desc_left">COUNTRYARD PARTY PARIS DESIGN WEEK</p>
-                            <p class="slider--desc slider--desc_uppercase slider--desc_left">2018</p>
-                        </a>
-                    </div>
-                </div>
-
-                <button class="slider--swiper slider--swiper_right">
+                <button type="button" class="arrow swiper-button-next">
                     <div class="slider--triangle slider--triangle_right"></div>
                 </button>
             </div>
@@ -208,9 +170,10 @@
             </div>
             <div class="bg" data-aos="fade-up">
                 <div class="container slider-project">
-                    <div class="slider">
-                        <button class="slider--arrow slider--arrow_left arrow arrow_left swiper-button-prev-project"></button>
-                        <div class="swiper-container projects">
+                        <div class="swiper-container swiper-container-projects">
+                            <button type="button" class="arrow swiper-button-prev swiper-button-prev-project">
+                                <div class="slider--triangle slider--triangle_left"></div>
+                            </button>
                             <div class="slider--items-wrapper swiper-wrapper">
                                 <div class="slider-project--image-wrapper swiper-slide">
                                     <img src="./img/carus1.jpg" alt="проект">
@@ -218,13 +181,12 @@
                                 <div class="slider-project--image-wrapper swiper-slide">
                                     <img src="./img/carus2.jpg" alt="проект">
                                 </div>
-                        </div>
-                        <div class="swiper-pagination swiper-pagination-bullets"></div>
-                        </div>
-                        
-                        <button class="slider--arrow slider--arrow_right arrow arrow_right swiper-button-next-project"></button>
-                    </div>
-
+                        </div> 
+                        <button type="button" class="arrow swiper-button-next swiper-button-next-project">
+                            <div class="slider--triangle slider--triangle_right"></div>
+                        </button>
+                        <div class="swiper-pagination swiper-pagination-bullets swiper-container-projects-pagination"></div>
+                        </div>    
                     <p class="slider-project--description">
                         Задача организации, в особенности же укрепление и развитие структуры позволяет оценить значение систем массового участия. Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности требуют от нас анализа системы обучения кадров, соответствует насущным потребностям.
                     </p>
@@ -307,16 +269,16 @@
                     <p class="brown-text request-form--desc">Ответим на вопросы, обсудим ваш проект</p>
                 </div>
                 <div class="contacts--col">
-                    <form action="" class="form form_short">
+                    <form class="form form_short">
                         <div class="form--row">
-                            <input class="form--input" type="text" name="fio" placeholder="Ваше имя*"/>
+                            <input class="form--input" type="text" name="fio" placeholder="Ваше имя*" required/>
                         </div>
                         <div class="form--row">
-                            <input class="form--input" type="tel" name="tel" placeholder="Телефон*"/>
+                            <input class="form--input" type="tel" name="tel" pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" placeholder="Телефон*" required/>
                         </div>
                         <div class="form--row form--policy-acceptance">
                             <div class="checkbox">
-                                <input class="custom-checkbox" type="checkbox" id="request-form-accept-checkbox" name="color-1" value="indigo">
+                                <input class="custom-checkbox" type="checkbox" id="request-form-accept-checkbox" name="color-1" value="indigo" required>
                                 <label for="request-form-accept-checkbox">Даю согласие на обработку персональных данных в соответствии с<a href="policy.html" >правилами пользования сайтом.</a></label>
                             </div>
                         </div>
@@ -372,8 +334,6 @@
     var swiper = new Swiper(".swiper-container", {
         slidesPerView: 3,
         spaceBetween: 20,
-        // slidesPerGroup: 3,
-        autoResize: false,
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
@@ -391,7 +351,7 @@
   }
 });
 
-    var swiper2 = new Swiper(".swiper-container.projects", {
+    var swiper2 = new Swiper(".swiper-container-projects", {
         slidesPerView: 1,
         autoResize: false,
         pagination: {

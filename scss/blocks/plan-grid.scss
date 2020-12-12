@@ -11,7 +11,6 @@
     margin-top: 72px;
 }
 
-
 .plan-grid--selector-wrapper {
     margin-left: 0;
     width: 110px;
@@ -36,14 +35,14 @@
 }
 
 .plan-grid--selector-input {
-	position: absolute;
-	z-index: -1;
-	opacity: 0;
-	margin: -35px 0 0 55px;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    margin: -35px 0 0 55px;
 }
 
 .plan-grid--selector-label {
-	position: relative;
+    position: relative;
     padding: 0;
     cursor: pointer;
     font-size: 18px;
@@ -52,13 +51,13 @@
 }
 
 .plan-grid--selector-label:before {
-    content: '';
-	position: absolute;
-	top: -40px;
-	width: 30px;
-	height: 30px;
-	border: none;
-    background: #F1E4DF;
+    content: "";
+    position: absolute;
+    top: -40px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: #f1e4df;
 }
 
 .plan-grid--selector-label_0:before {
@@ -83,15 +82,14 @@
 }
 
 .plan-grid--selector-label:after {
-	content: '';
-	position: absolute;
-	top: -40px;
-	width: 30px;
-	height: 30px;
-	background: #AF9888;
-	opacity: 0;
-    transition: .2s;
-    
+    content: "";
+    position: absolute;
+    top: -40px;
+    width: 30px;
+    height: 30px;
+    background: #af9888;
+    opacity: 0;
+    transition: 0.2s;
 }
 
 .plan-grid--selector-input:checked + .plan-grid--selector-label:after {
@@ -106,10 +104,8 @@
     -moz-box-ordinal-group: 2;
 }
 
-.plan-grid
-
-.plan-grid__selector-description {
-    clip: rect(1px,1px,1px,1px);
+.plan-grid .plan-grid__selector-description {
+    clip: rect(1px, 1px, 1px, 1px);
     height: 1px;
     overflow: hidden;
     position: absolute;
@@ -130,7 +126,7 @@
 }
 
 .plan-grid--feature-table-row {
-    border-bottom: 1px solid #E2DFDA;
+    border-bottom: 1px solid #e2dfda;
     min-height: 40px;
 
     display: flex;
@@ -153,9 +149,7 @@
     display: block;
 }
 
-
 @media (max-width: 910px) {
-
     .service-info--heading {
         font-size: 18px;
     }
@@ -178,7 +172,7 @@
         width: 100%;
         justify-content: space-around;
     }
-    
+
     .plan-grid--selector-label:before {
         width: 40px;
         height: 40px;
