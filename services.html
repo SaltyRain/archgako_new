@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-        <link
-            href="https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&display=swap"
-            rel="stylesheet"
-        />
-        <link rel="stylesheet" href="/css/slider.css" />
-        <link rel="stylesheet" href="/css/normalize.css" />
-        <link rel="stylesheet" href="/css/style.css" />
-        <title>Archgako | Главная</title>
-    </head>
-    <body>
-        <header class="header container">
-            <a href="index.html" class="header--site-logo site-logo">
-                <span class="header--archgako site-logo--archgako"
-                    >ARCHGAKÒ</span
-                >
-                <span class="header--sign site-logo--sign"
-                    >architecture and interior design</span
-                >
-            </a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/slider.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Archgako | Главная</title>
+</head>
+<body>
+    <header class="header container animate__animated  animate__fadeIn animate__delay-1s" id="header">
+        
+        <a href="index.html" class="header--site-logo site-logo">
+            <span class="header--archgako site-logo--archgako">ARCHGAKÒ</span>
+            <span class="header--sign site-logo--sign">architecture and interior design</span>
+        </a>
 
             <div class="header--button-wrapper">
                 <a href="tel:+79111620482" class="header--call-button">
@@ -39,46 +38,30 @@
                     <span class="hamburger-box">
                         <span class="hamburger-inner"></span>
                     </span>
-                </button>
+                </button> </div>
+        <div class="side-menu">
+            <button class="side-menu--close close" type="button">
+                <span class="close--inner" style="color: transparent;  text-shadow: 0 0 0 rgb(39, 41, 39); ">&#x274C;</span>
+            </button>
+            <nav class="header--site-nav site-nav">
+                <ul>
+                    <li class="site-nav--item"><a href="about.html" >О студии</a></li>
+                    <li class="site-nav--item"><a href="projects.html" >Проекты</a></li>
+                    <li class="site-nav--item"><a href="services.php" >Услуги</a></li>
+                    <li class="site-nav--item"><a href="blog.html" >Блог</a></li>
+                    <li class="site-nav--item"><a href="contacts.html" >Контакты</a></li>
+                </ul>
+            </nav>
+    
+            <a href="tel:+79111620482" class="header--site-tel site-tel">
+                <span class="site-tel--number">+7 (911) 162 04 82</span>
+            </a>
+    
+            <a href="contacts.html#request-form" class="button request">Напишите нам</a>
+    
+            <div class="language">
+                <span>ru | en</span>
             </div>
-
-            <div class="side-menu">
-                <button class="side-menu--close close" type="button">
-                    <span
-                        class="close--inner"
-                        style="
-                            color: transparent;
-                            text-shadow: 0 0 0 rgb(39, 41, 39);
-                        "
-                        >&#x274C;</span
-                    >
-                </button>
-                <nav class="header--site-nav site-nav">
-                    <ul>
-                        <li class="site-nav--item">
-                            <a href="about.html">О студии</a>
-                        </li>
-                        <li class="site-nav--item">
-                            <a href="projects.html">Проекты</a>
-                        </li>
-                        <li class="site-nav--item">
-                            <a href="services.html">Услуги</a>
-                        </li>
-                        <li class="site-nav--item">
-                            <a href="blog.html">Блог</a>
-                        </li>
-                        <li class="site-nav--item">
-                            <a href="contacts.html">Контакты</a>
-                        </li>
-                    </ul>
-                </nav>
-
-                <a href="tel:+79111620482" class="header--site-tel site-tel">
-                    <span class="site-tel--number">+7 (911) 162 04 82</span>
-                </a>
-
-                    <button class="button " onclick="PopUpShow()">Добавить услугу</button>
-                </div>
             </div>
         </header>
         <main class="container">
@@ -1753,167 +1736,99 @@
                     </div>
                 </div>
             </section>
-            <section class="section--advantages">
-                <div class="dot"></div>
-                <h2 class="section--heading">Проект с ARCHGAKÒ - это</h2>
-                <div class="advantages">
-                    <div class="advantages--item advantage">
-                        <div class="advantage--image">
-                            <img src="./img/p1.png" alt="преимущество 1" />
-                        </div>
-                        <div class="advantage--text">
-                            <span class="advantage--heading"
-                                >ИНДИВИДУАЛЬНОЕ РЕШЕНИЕ</span
-                            >
-                            <p class="advantage--desc">
-                                Создаем адаптивную среду, учитывая особенности и
-                                специфику нашего клиента.
-                            </p>
-                        </div>
+        <section class="section--advantages">
+            <div class="dot"></div>
+            <h2 class="section--heading">Проект с ARCHGAKÒ  - это</h2>
+            <div class="advantages">
+                <div class="advantages--item advantage">
+                    <div class="advantage--image">
+                        <img src="./img/adv-1.png" alt="преимущество 1">
                     </div>
-
-                    <div class="advantages--item advantage">
-                        <div class="advantage--image">
-                            <img src="./img/p2.png" alt="преимущество 1" />
-                        </div>
-                        <div class="advantage--text">
-                            <span class="advantage--heading"
-                                >ТЕХНОЛОГИЯ И ЭРГОНОМИЧНОСТЬ</span
-                            >
-                            <p class="advantage--desc">
-                                Следим за новейшими разработками в области
-                                проектирования, Smart Home, VR reality,
-                                параметрическое генерирование и моделирование
-                                пространства.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="advantages--item advantage">
-                        <div class="advantage--image">
-                            <img src="./img/p3.png" alt="преимущество 1" />
-                        </div>
-                        <div class="advantage--text">
-                            <span class="advantage--heading"
-                                >СРОКИ ВЫПОЛНЕНИЯ РАБОТ</span
-                            >
-                            <p class="advantage--desc">
-                                Мы живём в современном ритме и ценим ваше и наше
-                                время, поэтому мы всегда находим баланс скорости
-                                и качества выполнения работ.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="advantages--item advantage">
-                        <div class="advantage--image">
-                            <img src="./img/p4.png" alt="преимущество 1" />
-                        </div>
-                        <div class="advantage--text">
-                            <span class="advantage--heading"
-                                >ЭКОНОМИЯ ВАШИХ РЕСУРСОВ</span
-                            >
-                            <p class="advantage--desc">
-                                Наше комплексное решение позволяет рационально
-                                распределить ваши средства и сэкономить до 20%
-                                бюджета и до 50% времени.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="advantages--item advantage">
-                        <div class="advantage--image">
-                            <img src="./img/p5.png" alt="преимущество 1" />
-                        </div>
-                        <div class="advantage--text">
-                            <span class="advantage--heading">РЕЗУЛЬТАТ</span>
-                            <p class="advantage--desc">
-                                Ведем проекты от обмеров до финальной
-                                комплектации и декорирования. В итоге вы
-                                получаете обустроенное и детализированное
-                                пространство.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="advantages--item advantage">
-                        <div class="advantage--image">
-                            <img src="./img/p6.png" alt="преимущество 1" />
-                        </div>
-                        <div class="advantage--text">
-                            <span class="advantage--heading"
-                                >ПЕРСОНАЛЬНАЯ СВЯЗЬ</span
-                            >
-                            <p class="advantage--desc">
-                                Мы быстро находим выход из непредвиденных
-                                ситуаций и проводим профессиональные
-                                консультации. Мы на связи из любой точки мира!
-                            </p>
-                        </div>
+                    <div class="advantage--text">
+                        <span class="advantage--heading">ИНДИВИДУАЛЬНОЕ РЕШЕНИЕ</span>
+                        <p class="advantage--desc">Создаем адаптивную среду, учитывая особенности и специфику нашего клиента.</p>
                     </div>
                 </div>
-            </section>
-        </main>
-        <footer class="footer--wrapper">
-            <div class="container">
-                <div class="footer">
-                    <div class="footer--column footer--logo">
-                        <span class="footer--logo_archgako site-logo--archgako"
-                            >ARCHGAKÒ</span
-                        >
-                        <span class="footer--logo_sign site-logo--sign"
-                            >architecture and interior design</span
-                        >
-                    </div>
 
-                    <div class="footer--column footer--tel">
-                        <a href="tel:+79111620482" class="footer-tel--item"
-                            >+7 911 162 04 82 RUS</a
-                        >
-                        <a href="tel:+79216361451" class="footer-tel--item"
-                            >+7 921 636 14 51 RUS</a
-                        >
-                        <a href="+393668202223" class="footer-tel--item"
-                            >+39 366 82 02 223 EU</a
-                        >
+                <div class="advantages--item advantage">
+                    <div class="advantage--image">
+                        <img src="./img/adv-2.png" alt="преимущество 1">
                     </div>
-
-                    <div class="footer--column">
-                        <a
-                            href="https://yandex.ru/maps/?pt=37.647298,55.761558&z=18&l=map"
-                            class="footer--adress"
-                            >Москва, улица Макаренко, 5с 1а,
-                            <span class="footer--br"
-                                >ст. м.Чистые пруды</span
-                            ></a
-                        >
-                        <!-- <p class="footer--adress">Москва, улица Макаренко, 5с 1а, <span class="footer--br">ст. м.Чистые пруды</span></p> -->
-                        <a href="mailto:archgako@gmail.com" class="footer--mail"
-                            >archgako@gmail.com</a
-                        >
+                    <div class="advantage--text">
+                        <span class="advantage--heading">ТЕХНОЛОГИЯ И ЭРГОНОМИЧНОСТЬ</span>
+                        <p class="advantage--desc">Следим за новейшими разработками в области проектирования, Smart Home, VR reality, параметрическое генерирование и моделирование пространства.</p>
                     </div>
+                </div>
 
-                    <div class="footer--column">
-                        <div class="footer--social-media">
-                            <a href="https://www.instagram.com/archgako/"
-                                ><img
-                                    class="footer__social-media-item"
-                                    src="./img/instagram icon.svg"
-                                    alt="ARCHGAKO в instagram"
-                                    width="50px"
-                            /></a>
-                            <a href="https://www.facebook.com/ARCHGAKO/"
-                                ><img
-                                    class="footer__social-media-item"
-                                    src="./img/facebook icon.svg"
-                                    alt="ARCHGAKO на facebook"
-                                    width="50px"
-                            /></a>
-                        </div>
-                        <a href="policy.html" class="footer--policy"
-                            >Политика конфиденциальности</a
-                        >
-                        <span class="footer--copyright">2020 © Archgako</span>
+                <div class="advantages--item advantage">
+                    <div class="advantage--image">
+                        <img src="./img/adv-3.png" alt="преимущество 1">
+                    </div>
+                    <div class="advantage--text">
+                        <span class="advantage--heading">СРОКИ ВЫПОЛНЕНИЯ РАБОТ</span>
+                        <p class="advantage--desc">Мы живём в современном ритме и ценим ваше и наше время, поэтому мы всегда находим баланс скорости и качества выполнения работ.</p>
+                    </div>
+                </div>
+
+                <div class="advantages--item advantage">
+                    <div class="advantage--image">
+                        <img src="./img/adv-4.png" alt="преимущество 1">
+                    </div>
+                    <div class="advantage--text">
+                        <span class="advantage--heading">ЭКОНОМИЯ ВАШИХ РЕСУРСОВ</span>
+                        <p class="advantage--desc">Наше комплексное решение позволяет рационально распределить ваши средства и сэкономить до 20% бюджета и до 50% времени.</p>
+                    </div>
+                </div>
+
+                <div class="advantages--item advantage">
+                    <div class="advantage--image">
+                        <img src="./img/adv-5.png" alt="преимущество 1">
+                    </div>
+                    <div class="advantage--text">
+                        <span class="advantage--heading">РЕЗУЛЬТАТ</span>
+                        <p class="advantage--desc">Ведем проекты от обмеров до финальной комплектации и декорирования. В итоге вы получаете обустроенное и детализированное пространство.</p>
+                    </div>
+                </div>
+
+                <div class="advantages--item advantage">
+                    <div class="advantage--image">
+                        <img src="./img/adv-6.png" alt="преимущество 1">
+                    </div>
+                    <div class="advantage--text">
+                        <span class="advantage--heading">ПЕРСОНАЛЬНАЯ СВЯЗЬ</span>
+                        <p class="advantage--desc">Мы быстро находим выход из непредвиденных ситуаций и проводим профессиональные консультации. Мы на связи из любой точки мира!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="container button-up--wrapper">
+        <a href="#header" id="buttonUp" class="button-up"></a>
+    </div>
+    <footer class="footer--wrapper">
+        <div class="container">
+            <div class="footer">
+                <div class="footer--column footer--logo">
+                    <span class="footer--logo_archgako site-logo--archgako">ARCHGAKÒ</span>
+                    <span class="footer--logo_sign site-logo--sign">architecture and interior design</span>
+                </div>
+                
+                <div class="footer--column footer--tel">
+                    <a href="tel:+79111620482" class="footer-tel--item">+7 911 162 04 82 RUS</a>
+                    <a href="tel:+79216361451" class="footer-tel--item">+7 921 636 14 51 RUS</a>
+                    <a href="+393668202223" class="footer-tel--item">+39 366 82 02 223 EU</a>
+                </div>
+        
+                <div class="footer--column">
+                    <a href="https://yandex.ru/maps/?pt=37.647298,55.761558&z=18&l=map" class="footer--adress">Москва, улица Макаренко, 5с 1а, <span class="footer--br">ст. м.Чистые пруды</span></a>
+                    <!-- <p class="footer--adress">Москва, улица Макаренко, 5с 1а, <span class="footer--br">ст. м.Чистые пруды</span></p> -->
+                    <a href="mailto:archgako@gmail.com" class="footer--mail">archgako@gmail.com</a>
+                </div>
+        
+                <div class="footer--column">
+                    <div class="footer--social-media">
+                        <a href="https://www.instagram.com/archgako/"><img class="footer__social-media-item" src="./img/instagram icon.svg" alt="ARCHGAKO в instagram" width="50px"></a>
+                        <a href="https://www.facebook.com/ARCHGAKO/"><img class="footer__social-media-item" src="./img/facebook icon.svg" alt="ARCHGAKO на facebook" width="50px"></a>
                     </div>
                 </div>
             </div>
