@@ -123,4 +123,4 @@ function isFullyVisible(el) {
 //         case authPos:
 //             dotAuth.style.display = "block";
 //     }
-});
+// });

@@ -6,6 +6,7 @@
     position: fixed;
     top: 0px;
     z-index: 2;
+    display: none;
 }
 .b-popup .b-popup-content {
     position: relative;
@@ -100,14 +101,14 @@ body:not(:-moz-handler-blocked) fieldset {
     background-color: transparent;
     outline: none;
     cursor: pointer;
-    background-image: url("../../img/cart.png");
+    background-image: url("../../img/order-button.png");
     background-size: contain;
-    top: 55%;
-    right: 10%;
+    bottom: 4%;
+    right: 8%;
     position: fixed;
     z-index: 0;
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
 }
 
 @media (max-height: 557px) {
@@ -124,6 +125,11 @@ body:not(:-moz-handler-blocked) fieldset {
 @media (max-width: 768px) {
     .b-popup--title {
         font-size: 22px;
+    }
+    .popup--cart {
+        // width: 50px;
+        // height: 50px;
+        right: 4%;
     }
 }
 
@@ -148,5 +154,9 @@ body:not(:-moz-handler-blocked) fieldset {
 @media (max-width: 380px) {
     .b-popup .b-popup-content {
         padding: 20px 15px 30px 15px;
+    }
+    .popup--cart {
+        // width: 30px;
+        // height: 30px;
     }
 }
