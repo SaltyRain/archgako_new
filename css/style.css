@@ -690,7 +690,8 @@ input[type=checkbox]:focus {
   overflow: hidden;
   position: fixed;
   top: 0px;
-  z-index: 2; }
+  z-index: 2;
+  display: none; }
 
 .b-popup .b-popup-content {
   position: relative;
@@ -769,14 +770,14 @@ body:not(:-moz-handler-blocked) fieldset {
   background-color: transparent;
   outline: none;
   cursor: pointer;
-  background-image: url("../../img/cart.png");
+  background-image: url("../../img/order-button.png");
   background-size: contain;
-  top: 55%;
-  right: 10%;
+  bottom: 4%;
+  right: 8%;
   position: fixed;
   z-index: 0;
-  width: 70px;
-  height: 70px; }
+  width: 60px;
+  height: 60px; }
 
 .popup--number-services {
   position: fixed;
@@ -796,7 +797,9 @@ body:not(:-moz-handler-blocked) fieldset {
 
 @media (max-width: 768px) {
   .b-popup--title {
-    font-size: 22px; } }
+    font-size: 22px; }
+  .popup--cart {
+    right: 4%; } }
 
 @media (max-width: 650px) {
   .b-popup .b-popup-content {
