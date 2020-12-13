@@ -778,6 +778,14 @@ body:not(:-moz-handler-blocked) fieldset {
   width: 70px;
   height: 70px; }
 
+.popup--number-services {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  z-index: 1;
+  border-radius: 50%;
+  background-color: red; }
+
 @media (max-height: 557px) {
   .b-popup .b-popup-content {
     margin-top: 3%; } }
@@ -1009,14 +1017,13 @@ body:not(:-moz-handler-blocked) fieldset {
 .slider--inner {
   display: flex; }
 
-.slider--item {
-  margin-right: 32px; }
-  .slider--item:last-child {
+.slider--item:last-child {
+  margin-right: 0; }
+
+.slider--item_max3 {
+  margin-right: 60px; }
+  .slider--item_max3:last-child {
     margin-right: 0; }
-  .slider--item_max3 {
-    margin-right: 60px; }
-    .slider--item_max3:last-child {
-      margin-right: 0; }
 
 .slider--image-wrapper {
   position: relative; }

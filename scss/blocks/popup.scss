@@ -110,6 +110,15 @@ body:not(:-moz-handler-blocked) fieldset {
     height: 70px;
 }
 
+.popup--number-services {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+    border-radius: 50%;
+    background-color: red;
+}
+
 @media (max-height: 557px) {
     .b-popup .b-popup-content {
         margin-top: 3%;
