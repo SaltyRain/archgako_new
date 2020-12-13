@@ -48,7 +48,8 @@
     width: 19.41px;
     height: 20px;
     border-radius: 50%;
-    background: #AF9888;
+    background: #af9888;
+    transition: 0.2s;
 
     position: absolute;
     &_0 {
@@ -68,6 +69,14 @@
         left: 10px;
     }
 }
+
+// .stages--scroll-dot_0,
+// .stages--scroll-dot_1,
+// .stages--scroll-dot_2,
+// .stages--scroll-dot_3 {
+//     display: none;
+// }
+
 // stage-item
 
 .stage-item {

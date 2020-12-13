@@ -1,0 +1,106 @@
+<div class="container button-up--wrapper">
+    <a href="#header" id="buttonUp" class="button-up"></a>
+</div>
+
+</main>
+<footer class="footer--wrapper">
+<div class="container">
+    <div class="footer">
+        <div class="footer--column footer--logo">
+            <span class="footer--logo_archgako site-logo--archgako">ARCHGAKÒ</span>
+            <span class="footer--logo_sign site-logo--sign">architecture and interior design</span>
+        </div>
+        
+        <div class="footer--column footer--tel">
+            <a href="tel:+79111620482" class="footer-tel--item">+7 911 162 04 82 RUS</a>
+            <a href="tel:+79216361451" class="footer-tel--item">+7 921 636 14 51 RUS</a>
+            <a href="+393668202223" class="footer-tel--item">+39 366 82 02 223 EU</a>
+        </div>
+
+        <div class="footer--column">
+            <a href="https://yandex.ru/maps/?pt=37.647298,55.761558&z=18&l=map" class="footer--adress">Москва, улица Макаренко, 5с 1а, <span class="footer--br">ст. м.Чистые пруды</span></a>
+            <a href="mailto:archgako@gmail.com" class="footer--mail">archgako@gmail.com</a>
+        </div>
+
+        <div class="footer--column">
+            <div class="footer--social-media">
+                <a href="https://www.instagram.com/archgako/"><img class="footer__social-media-item" src="./img/instagram icon.svg" alt="ARCHGAKO в instagram" width="50px"></a>
+                <a href="https://www.facebook.com/ARCHGAKO/"><img class="footer__social-media-item" src="./img/facebook icon.svg" alt="ARCHGAKO на facebook" width="50px"></a>
+            </div>
+            <a href="policy.html" class="footer--policy">Политика конфиденциальности</a>
+            <span class="footer--copyright">2020 © Archgako</span>
+        </div>
+    </div>
+</div>
+
+</footer>
+
+<script src="./js/animation.js"></script>
+<script src='./js/index.js' type="module"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+var swiper = new Swiper(".swiper-container", {
+slidesPerView: 3,
+spaceBetween: 20,
+// slidesPerGroup: 3,
+autoResize: false,
+navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+},
+breakpoints: {
+320: {
+slidesPerView: 1,
+},
+768: {
+slidesPerView: 2
+},
+1000: {
+slidesPerView: 3
+},
+}
+});
+
+var swiper2 = new Swiper(".swiper-container.projects", {
+slidesPerView: 1,
+autoResize: false,
+pagination: {
+    el: '.swiper-pagination',
+clickable: true
+},
+navigation: {
+    nextEl: ".swiper-button-next-project",
+    prevEl: ".swiper-button-prev-project",
+},
+hashNavigation: {
+watchState: true,
+}
+});
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init({
+// Global settings:
+disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+initClassName: 'aos-init', // class applied after initialization
+animatedClassName: 'aos-animate', // class applied on animation
+useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+// Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+offset: 120, // offset (in px) from the original trigger point
+delay: 0, // values from 0 to 3000, with step 50ms
+duration: 800, // values from 0 to 3000, with step 50ms
+easing: 'ease', // default easing for AOS animations
+once: false, // whether animation should happen only once - while scrolling down
+mirror: false, // whether elements should animate out while scrolling past them
+anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});
+</script>
+</body>
+</html>
