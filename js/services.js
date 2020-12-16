@@ -153,13 +153,14 @@ const addServiceButtons = [
 const createInput = (typeArray) => {
     const popUpElement = document.querySelector(".b-popup--choosed-services");
     typeArray.forEach((typeObj) => {
-        const inputElement = document.createElement("input");
-        inputElement.type = "radio";
+        const inputElement = document.createElement("li");
+        inputElement.classList.add("b-popup--label");
+        const button = document.createElement("button");
+        button.classList.add("b-popup--label-button");
         if (typeof typeObj !== "string") {
             let flag = true;
             for (let i = 0; i < popUpElement.childNodes.length; i++) {
                 const child = popUpElement.childNodes[i];
-                if (child.nodeName !== "INPUT") continue;
                 if (
                     [...child.textContent.split("–")[0]]
                         .splice(-1, 1)
@@ -178,18 +179,33 @@ const createInput = (typeArray) => {
                 inputElement.textContent = `${getStateName(
                     typeObj.type
                 )} – ${typeObj.plan.toUpperCase()}`;
+                button.id = `${typeObj.type}`;
+                button.addEventListener("click", () => {
+                    popUp.removeExtra(button.id);
+                    const parentButton = button.parentElement;
+                    const parentListElement = parentButton.parentElement;
+                    parentListElement.removeChild(parentButton);
+                });
+                inputElement.appendChild(button);
                 popUpElement.appendChild(inputElement);
             }
         } else {
             let flag = true;
             for (let i = 0; i < popUpElement.childNodes.length; i++) {
                 const child = popUpElement.childNodes[i];
-                if (child.nodeName !== "INPUT") continue;
                 if (child.textContent === `${getStateName(typeObj)}`)
                     flag = false;
             }
             if (flag) {
                 inputElement.textContent = `${getStateName(typeObj)}`;
+                button.id = `${typeObj}`;
+                button.addEventListener("click", () => {
+                    popUp.removeMain(typeObj);
+                    const parentButton = button.parentElement;
+                    const parentListElement = parentButton.parentElement;
+                    parentListElement.removeChild(parentButton);
+                });
+                inputElement.appendChild(button);
                 popUpElement.appendChild(inputElement);
             }
         }

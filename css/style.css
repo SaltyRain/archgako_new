@@ -727,7 +727,35 @@ input[type=checkbox]:focus {
   min-width: 0; }
 
 .b-popup--choosed-services {
-  display: none; }
+  list-style: none;
+  padding: 0;
+  border-bottom: 2px solid #C3B5AA;
+  width: 70%;
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap; }
+
+.b-popup--label {
+  background-color: rgba(175, 152, 136, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  padding: 6px 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #AF9888;
+  margin-right: 20px; }
+
+.b-popup--label-button {
+  background-image: url(../img/cross.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 0;
+  outline: none;
+  height: 9px;
+  margin-left: 15px; }
 
 body:not(:-moz-handler-blocked) fieldset {
   display: table-cell; }
@@ -778,6 +806,14 @@ body:not(:-moz-handler-blocked) fieldset {
   z-index: 0;
   width: 60px;
   height: 60px; }
+
+.popup--number-services {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  z-index: 1;
+  border-radius: 50%;
+  background-color: red; }
 
 @media (max-height: 557px) {
   .b-popup .b-popup-content {
@@ -1012,14 +1048,13 @@ body:not(:-moz-handler-blocked) fieldset {
 .slider--inner {
   display: flex; }
 
-.slider--item {
-  margin-right: 32px; }
-  .slider--item:last-child {
+.slider--item:last-child {
+  margin-right: 0; }
+
+.slider--item_max3 {
+  margin-right: 60px; }
+  .slider--item_max3:last-child {
     margin-right: 0; }
-  .slider--item_max3 {
-    margin-right: 60px; }
-    .slider--item_max3:last-child {
-      margin-right: 0; }
 
 .slider--image-wrapper {
   position: relative; }
