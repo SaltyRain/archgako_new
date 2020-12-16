@@ -48,8 +48,39 @@
     margin: 0;
     min-width: 0;
 }
+
 .b-popup--choosed-services {
-    display: none;
+    list-style: none;
+    padding: 0;
+    border-bottom: 2px solid $light-brown;
+    width: 70%;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.b-popup--label {
+    background-color: rgba(175, 152, 136, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    padding: 6px 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: $brown;
+    margin-right: 20px;
+}
+
+.b-popup--label-button {
+    background-image: url(../img/cross.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 0;
+    outline: none;
+    height: 9px;
+    margin-left: 15px;
 }
 
 body:not(:-moz-handler-blocked) fieldset {
